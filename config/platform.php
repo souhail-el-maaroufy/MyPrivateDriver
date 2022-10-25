@@ -142,7 +142,7 @@ return [
     */
 
     'attachment' => [
-        'disk'      =>  '',
+        'disk'      =>  'public',
         'generator' => \Orchid\Attachment\Engines\Generator::class,
     ],
 

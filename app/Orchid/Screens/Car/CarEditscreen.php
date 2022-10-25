@@ -103,13 +103,13 @@ class CarEditscreen extends Screen
 
             Layout::rows([
 
-                // Cropper::make('car.image')
-                //     ->targetRelativeUrl()
-                //     ->upload_max_filesize()
-                //     ->post_max_size()
-                //     ->settings()
-                //     ->width(500)
-                //     ->height(500),
+                Cropper::make('car.image')
+                    ->targetId()
+                    ->upload_max_filesize()
+                    ->post_max_size()
+                    ->settings()
+                    ->width(500)
+                    ->height(500),
 
 
                 Upload::make('car.attachment')

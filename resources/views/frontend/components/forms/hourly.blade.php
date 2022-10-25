@@ -141,7 +141,7 @@
                 <li class="car">
                     <a id="my_car" title="{{ $car->name }}" gallery_type="hourly" carid="{{ $car->id }}" personnes="{{ $car->personne }}"
                          bags="{{ $car->bags }}" carcode="h1" hour_rate="{{ $car->houe_rate }}" carname="{{ $car->name }}">
-                        <img src="{{ asset('storage/public/2022/10/09/fef798bc914b3dcd06bebe6e04c794c435b8d687.png') }}" width="80" alt="{{ $car->name }}" />
+                        <img src="{{ asset('storage/app/2022/10/17/c56f2e769babdda2b1ce5f7ee5a1717bb0b355.png') }}" width="80" alt="{{ $car->name }}" />
                         <span> {{ $car->name }} </span>
                         <div style="float:right; padding: 1.5% 1%;">
                             <div class="car-details"><img src="https://www.allomycab.ma/images/men.svg"><span>x{{ $car->personne }}
