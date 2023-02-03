@@ -28,19 +28,29 @@ class PlatformProvider extends OrchidServiceProvider
     public function registerMainMenu(): array
     {
         return [
+            Menu::make('Car')
+            ->icon('car')
+            ->route('platform.car.list')
+            ->title('Car Management '),
+
+            Menu::make('Driver')
+            ->route('platform.driver.list'),
+
+            Menu::make('Category')
+            ->route('platform.category.list'),
+
+            // Menu::make('Car Management ')
+            // ->icon('code')
+            // ->list([
+            //     Menu::make('Car')->icon('car')->route('platform.car.list'),
+            //     Menu::make('Driver')->route('platform.driver.list'),
+            //     Menu::make('Category')->route('platform.category.list'),
+            // ]),
 
             Menu::make('Reservation')
             ->icon('monitor')
             ->route('platform.reservation.list')
-            ->title('Car Management '),
-
-        Menu::make('Car Management ')
-            ->icon('code')
-            ->list([
-                Menu::make('Car')->icon('car')->route('platform.car.list'),
-                Menu::make('Driver')->route('platform.driver.list'),
-                Menu::make('Category')->route('platform.category.list'),
-            ]),
+            ->title('Reservation Management '),
 
             Menu::make('Pack')
             ->route('platform.pack.list')

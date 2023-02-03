@@ -107,11 +107,11 @@ class reservartionListLayout extends Table
                         ->icon('options-vertical')
                         ->list([
 
-                            Link::make('confirmation')
+                            Link::make('Confirmation')
                             ->icon('pencil')
                             ->route('platform.reservation.edit',$reservation->id),
 
-                            Link::make('show_details')
+                            Link::make('Details')
                                 ->icon('eye')
                                 ->route('platform.reservation.show', $reservation->reservation_d),
 

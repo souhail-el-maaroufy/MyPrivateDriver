@@ -35,12 +35,12 @@ class DriverEdit extends Screen
      */
     public function name(): ?string
     {
-        return 'Driver';
+        return 'DriverEdit';
     }
 
     public function description(): ?string
     {
-        return " create or edit ";
+        return "";
     }
     /**
      * Button commands.

@@ -2,52 +2,163 @@
 
 @section('content')
     <header id="gtco-header" class="gtco-cover" role="banner"
-        style="background-image:url(https://www.allomycab.ma/images/img_bg_1.jpg);">
+        style="background-image:url({{asset('images/img_bg_1.jpg')}});">
         <div class="overlay"></div>
         <div class="gtco-container">
             <div class="row flexit">
                 <div class="booking-form">
-                  <div class="row">
-                    <div class="col-5">
-                     
-                    </div>
+                    <div class="row">
+                        <h2 class="text-center" style="color:#bf9c60;"> Reservation</h2>
 
-                    <div class="col-6">
-                        <form autocomplete="off" id="simple_form"  method="post"
-                            action="{{ route('reservation') }}">
+                        <form autocomplete="off" id="simple_form" method="post" action="{{ route('reservation') }}">
                             @csrf
-                            {{-- <input type="hidden" name="_token"
-                                              value="p63clH24k5PzPfhezuVCrCH64KgVXaWRC0MsiBXd"> --}}
+                            @if ($reservation->type == "SIMPLE")
+
+                            <div class="col-md-5">
+                                <div style="margin-top:10px;">
+                                    <div class="form-reservation" style="text-align: center;">
+
+                                        @php
+                                            $car_img = $car->attachment()->first()->name;
+                                            $car_path = $car->attachment()->first()->path;
+                                            $car_exten = $car->attachment()->first()->extension;
+                                            
+                                        @endphp
+                                                <a id="my_car" carid="{{ $car->id }}" title="{{ $car->name }}"
+                                                    gallery_type="hourly" personnes="{{ $car->personne }}"
+                                                    bags="{{ $car->bags }}"
+                                                    carcode="{{ asset('storage/' . $car_path . $car_img . '.' . $car_exten) }}"
+                                                    hour_rate="{{ $car->houe_rate }}" carname="{{ $car->name }}">
+
+                                                    <img src="{{ asset('storage/' . $car_path . $car_img . '.' . $car_exten) }}"
+                                                        width="80" alt="{{ $car->name }}" />
+                                                    <span> {{ $car->name }} </span>
+                                                    <div style="padding: 1.5% 1%;">
+                                                        <div class="car-details"><img
+                                                                src="{{ asset('images/men.svg') }}">x{{ $car->personne }}<span>
+                                                            </span></div>
+                                                        <div class="car-details"><img
+                                                                src="{{ asset('images/laguage.svg') }}">x{{ $car->bags }}<span>
+                                                            </span></div>
+                                                        <div class="car-details"><img src="{{ asset('images/wifi.svg') }}">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                    </div>
+                                    <div class="form-reservation">
+                                        <i class="fa-solid fa-arrows-left-right"></i> <label>Total Price :</label>
+                                        <label>{{$reservation_data->estimated_price}} euros / 
+                                            {{$reservation_data->estimated_price*$reservation_data->rate_usd}} USD / 
+                                            {{$reservation_data->estimated_price*$reservation_data->rate_mad}} MAD</label>
+                                    </div>
+                                    <div class="form-reservation">
+                                        <i class="fa-solid fa-clock"></i> <label>Duration :</label>
+                                        <label>{{$reservation_data->duration}}</label><br>
+                                        <i class="fa-solid fa-arrows-left-right"></i> <label>Distance :</label>
+                                        <label>{{$reservation_data->distance}} km</label>
+                                    </div>
+                                    <div class="form-reservation">
+                                        <i class="fa-solid fa-location-dot"></i> <label> Departure address : </label>
+                                        <label>{{ $reservation->depart }}</label>
+                                    </div>
+                                    <div class="form-reservation">
+                                        <i class="fa-solid fa-location-dot"></i> <label> First Destination adress : </label>
+                                        <label>{{ $reservation->destination }}</label>
+                                    </div>
+                                    <div class="form-reservation">
+                                        <i class="fa-solid fa-clock"></i> <label>Time and date of departure : </label>
+                                        <label>{{ $reservation->created_at }}</label>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                            @else
+                            <div class="col-md-5">
+                                <div style="margin-top:10px;">
+                                    <div class="form-reservation" style="text-align: center;">
+
+                                        @php
+                                            $car_img = $car->attachment()->first()->name;
+                                            $car_path = $car->attachment()->first()->path;
+                                            $car_exten = $car->attachment()->first()->extension;
+                                            
+                                        @endphp
+                                                <a id="my_car" carid="{{ $car->id }}" title="{{ $car->name }}"
+                                                    gallery_type="hourly" personnes="{{ $car->personne }}"
+                                                    bags="{{ $car->bags }}"
+                                                    carcode="{{ asset('storage/' . $car_path . $car_img . '.' . $car_exten) }}"
+                                                    hour_rate="{{ $car->houe_rate }}" carname="{{ $car->name }}">
+
+                                                    <img src="{{ asset('storage/' . $car_path . $car_img . '.' . $car_exten) }}"
+                                                        width="80" alt="{{ $car->name }}" />
+                                                    <span> {{ $car->name }} </span>
+                                                    <div style="padding: 1.5% 1%;">
+                                                        <div class="car-details"><img
+                                                                src="{{ asset('images/men.svg') }}">x{{ $car->personne }}<span>
+                                                            </span></div>
+                                                        <div class="car-details"><img
+                                                                src="{{ asset('images/laguage.svg') }}">x{{ $car->bags }}<span>
+                                                            </span></div>
+                                                        <div class="car-details"><img src="{{ asset('images/wifi.svg') }}">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                    </div>
+                                    <div class="form-reservation">
+                                        <i class="fa-solid fa-arrows-left-right"></i> <label>Personne :</label>
+                                        <label>{{$reservation->estimated_persons}}</label>
+                                    </div>
+                                    <div class="form-reservation">
+                                        <i class="fa-solid fa-clock"></i> <label>Estimated Days :</label>
+                                        <label>{{$reservation->estimated_days}}</label><br>
+                                        <i class="fa-solid fa-arrows-left-right"></i> <label>Estimated Cars :</label>
+                                        <label>{{$reservation->estimated_cars}} </label>
+                                    </div>
+                                    {{-- <div class="form-reservation">
+                                        <i class="fa-solid fa-location-dot"></i> <label> Departure address : </label>
+                                        <label>{{ $reservation->depart }}</label>
+                                    </div>
+                                    <div class="form-reservation">
+                                        <i class="fa-solid fa-location-dot"></i> <label> First Destination adress : </label>
+                                        <label>{{ $reservation->destination }}</label>
+                                    </div> --}}
+                                    <div class="form-reservation">
+                                        <i class="fa-solid fa-clock"></i> <label>Time and date of departure : </label>
+                                        <label>{{ $reservation->created_at }}</label>
+                                    </div>
+                                </div>
+                            </div>
+                            @endif
+
                             <fieldset>
-                                <h3> Reservation</h3>
 
                                 <!-- End of Reservation Date Picker -->
-
                                 <div class="form-group col-md-12">
-                                    <input required style="width:88%; float:left;" type="hidden"
+                                    <input required style="width:88%;" type="hidden"
                                         class="form-control departSelector destination" placeholder="Enter your full name"
                                         name="reservation_d" value="{{ $reservation->id }}">
                                 </div>
 
                                 <div class="form-group col-md-12">
-                                    <input required style="width:88%; float:left;" type="text"
+                                    <input required style="width:88%;" type="text"
                                         class="form-control departSelector destination" placeholder="Enter your full name"
                                         name="full_name" id="depart">
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <input style="width:88%; float:left;" required type="text"
+                                    <input style="width:88%;" required type="text"
                                         class="form-control arriveeSelector destination" placeholder="Entre your Email"
                                         name="email" id="destination">
                                 </div>
 
                                 <div class="form-group col-md-12">
-                                    <input style="width:88%; float:left;" required type="number"
+                                    <input style="width:88%;" required type="number"
                                         class="form-control arriveeSelector destination" placeholder="Entre your phone"
                                         name="phone" id="destination">
                                 </div>
 
                                 <div class="form-group col-md-12">
-                                    <select name="nb_place" class="form-control arriveeSelector destination">
+                                    <select style="width:88%;" name="nb_place"
+                                        class="form-control arriveeSelector destination">
                                         <option value="0">Number of persons</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -83,12 +194,12 @@
                                 </div>
 
                                 <div class="form-group col-md-12">
-                                    <textarea name="adress" placeholder="Entre your adress" class="form-control arriveeSelector destination"
-                                        cols="30" rows="10"></textarea>
+                                    <textarea style="width:88%;" name="adress" placeholder="Entre your adress"
+                                        class="form-control arriveeSelector destination" cols="30" rows="10"></textarea>
                                 </div>
 
                                 <div class="form-group col-md-12">
-                                    <input style="width:88%; float:left;" required type="text"
+                                    <input style="width:88%;" required type="text"
                                         class="form-control arriveeSelector destination" placeholder="Entre your details"
                                         name="details" id="destination">
                                 </div>
@@ -97,78 +208,16 @@
 
                                 <div class="form-group col-md-12 next">
                                     <div class="form-error-msg"></div>
-                                    <button type="button" class="btn btn-success btn-submit">Reservation
+                                    <button style="width:88%; type="button" class="btn btn-success btn-submit">Reservation
                                         &nbsp;&nbsp;</button>
                                 </div>
 
                             </fieldset>
                         </form>
                     </div>
-                  </div>
                 </div>
             </div>
         </div>
         </div>
     </header>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 @endsection

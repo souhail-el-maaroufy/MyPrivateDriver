@@ -5,17 +5,18 @@ namespace App\Http\Controllers\Front\reservation;
 use App\Enum\ReservationSelect;
 use App\Http\Controllers\Controller;
 use App\Models\Back\Car;
+use App\Models\Back\Category;
 use App\Models\Front\Reservation_Details;
 use App\Models\Front\Resevation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use PhpParser\JsonDecoder;
 
 class ReservationController extends Controller
 {
     public function index()
     {
         $cars = Car::all();
-        //  dd($cars);
         return view('landing', compact('cars'));
     }
     public function reservation_details(Request $request)
@@ -28,8 +29,17 @@ class ReservationController extends Controller
         // }
 
         $reservation = Reservation_Details::create($request->all());
+        $reservation_data =  json_decode($reservation->data);
 
-        return view('reservation', compact('reservation'));
+       foreach($cars=Car::all() as $car){
+        if($reservation->car_model == $car->id){
+           
+            return view('reservation', compact('reservation','reservation_data','car'));
+        }
+       }
+      
+
+       
     }
 
 

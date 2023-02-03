@@ -1,8 +1,6 @@
 <form autocomplete="off" id="simple_form" class="form-horizontal main-form" method="post"
     action="{{ route('reservation_details') }}">
     @csrf
-    {{-- <input type="hidden" name="_token"
-    value="p63clH24k5PzPfhezuVCrCH64KgVXaWRC0MsiBXd"> --}}
     <input type="hidden" name="depart_latlng" value="0">
     <input type="hidden" name="destination_latlng" value="0">
     <input type="hidden" name="type" value="SIMPLE">
@@ -16,20 +14,21 @@
         <!-- Reservation Date Picker -->
         <div class="form-group col-md-12 date-res">
             <label class='date_hours' for="">Date & Hour of
-                departure (Morocco) :&nbsp; <i class="ti-calendar"></i>&nbsp;<i class="ti-timer"></i>
-                <div class="am-pm"></div>
+                departure (Morocco) :&nbsp; <i class="fa-regular fa-calendar"></i>&nbsp;<i style="margin-right: 4px;"
+                    class="fa-solid fa-clock"></i>
+                <div class="am-pm"> </div>
             </label>
 
         </div>
         <div class="date-res">
             <div class="col-md-7 form-group">
                 <div class="reportrange pull-right  form-control">
-                    <i class="ti-calendar"></i>&nbsp;
+                    <i class="fa-regular fa-calendar"></i>&nbsp;
                     <span></span> <b class="caret"></b>
                 </div>
             </div>
             <div class="col-md-1">
-                <div class="form-group"><i class="ti-timer"></i>
+                <div class="form-group"><i class="fa-solid fa-clock"></i>
                 </div>
             </div>
             <div class="col-md-2">
@@ -97,38 +96,44 @@
                 <span class="car_chosen_title">You have chosen : </span>
                 <span class="car_chosen" style="color:#334e86;">Choose
                     your car</span>
-                <img class="select_arrows" alt="select arrows"
-                    src="https://www.allomycab.ma/images/arrow-select.svg"></button>
+                <img class="select_arrows" alt="select arrows" src="{{ asset('images/arrow-select.svg') }}"></button>
 
             <ul class="dropdown-menu">
 
-                <li class="dropdown-header">Economy</li>
-
                 @foreach ($cars as $car)
-                    <li class="car">
-                        <a id="my_car_{{ $car->id }}" carid="{{ $car->id }}" title="{{ $car->name }}" gallery_type="simple"
-                            personnes="{{ $car->personne }}" price_airport="{{ $car->price_airport }}"
-                            bags="{{ $car->bags }}"
-                            carcode="{{ asset('storage/2022/10/09/fef798bc914b3dcd06bebe6e04c794c435b8d687.png') }}"
-                            price_min="{{ $car->price_min }}" order="2" price_day="{{ $car->price_day }}"
-                            price_half="{{ $car->price_half }}" price_km="{{ $car->price_km }}"
-                            hour_rate="{{ $car->houe_rate }}" available="1" carname="{{ $car->name }}">
+                   
+                        <li class="dropdown-header">{{$car->categories}}</li>
 
-                            @php
-                                $car_img = $car->attachment()->get();
-                            @endphp
-                            <img src="{{ asset('storage/2022/10/09/fef798bc914b3dcd06bebe6e04c794c435b8d687.png') }}"
-                                width="80" alt="Van: Hyundai-H1" />
-                            <span> </span>
-                            <div style="float:right; padding: 1.5% 1%;">
-                                <div class="car-details"><img src="https://www.allomycab.ma/images/men.svg"><span>
-                                    </span></div>
-                                <div class="car-details"><img src="https://www.allomycab.ma/images/laguage.svg"><span>
-                                    </span></div>
-                                <div class="car-details"><img src="https://www.allomycab.ma/images/wifi.svg"></div>
-                            </div>
-                        </a>
-                    </li>
+                        @php
+                            $car_img = $car->attachment()->first()->name;
+                            $car_path = $car->attachment()->first()->path;
+                            $car_exten = $car->attachment()->first()->extension;
+                            
+                        @endphp
+
+                        <li class="car">
+                            <a id="my_car_{{ $car->id }}" carid="{{ $car->id }}"
+                                title="{{ $car->name }}" gallery_type="simple" personnes="{{ $car->personne }}"
+                                price_airport="{{ $car->price_airport }}" bags="{{ $car->bags }}"
+                                carcode="{{ asset('storage/' . $car_path . $car_img . '.' . $car_exten) }}"
+                                price_min="{{ $car->price_min }}" order="2" price_day="{{ $car->price_day }}"
+                                price_half="{{ $car->price_half }}" price_km="{{ $car->price_km }}"
+                                hour_rate="{{ $car->houe_rate }}" available="1" carname="{{ $car->name }}">
+
+
+
+                                <img src="" width="80" alt="" />
+                                <span> </span>
+                                <div style="float:right; padding: 1.5% 1%;">
+                                    <div class="car-details"><img src="{{ asset('images/men.svg') }}"><span>
+                                        </span></div>
+                                    <div class="car-details"><img src="{{ asset('images/laguage.svg') }}"><span>
+                                        </span></div>
+                                    <div class="car-details"><img src="h{{ asset('images/wifi.svg') }}"></div>
+                                </div>
+                            </a>
+                        </li>
+                   
                 @endforeach
 
                 {{-- <li class="dropdown-header">Comfort</li>
@@ -148,92 +153,6 @@
                             <!-- <div class="car-details"><img src="https://www.allomycab.ma/images/wifi.svg"></div>-->
                         </div>
                     </a>
-                </li>
-                <li class="car">
-                    <a id="my_car_12" title="Mercedes Sprinter" gallery_type="simple" carid="12" personnes="17"
-                        price_airport="60" bags="20" carcode="ms17" price_min="60" order="9"
-                        price_day="199" price_half="120" price_km="1.8" hour_rate="20" available="1"
-                        carname="Mercedes Sprinter">
-                        <img src="https://www.allomycab.ma/images/car_ms17.jpg" width="80"
-                            alt="Mercedes Sprinter" />
-                        <span> Mercedes Sprinter </span>
-                        <div style="float:right; padding: 1.5% 1%;">
-                            <div class="car-details"><img src="https://www.allomycab.ma/images/men.svg"><span>x17
-                                </span></div>
-                            <div class="car-details"><img src="https://www.allomycab.ma/images/laguage.svg"><span>x20
-                                </span></div>
-                            <!-- <div class="car-details"><img src="https://www.allomycab.ma/images/wifi.svg"></div>-->
-                        </div>
-                    </a>
-                </li>
-                <li class="car">
-                    <a id="my_car_4" title="Mercedes E class" gallery_type="simple" carid="4" personnes="3"
-                        price_airport="50" bags="3" carcode="me" price_min="50" order="10"
-                        price_day="199" price_half="150" price_km="1.8" hour_rate="20" available="1"
-                        carname="Mercedes E class">
-                        <img src="https://www.allomycab.ma/images/car_me.jpg" width="80"
-                            alt="Mercedes E class" />
-                        <span> Mercedes E class </span>
-                        <div style="float:right; padding: 1.5% 1%;">
-                            <div class="car-details"><img src="https://www.allomycab.ma/images/men.svg"><span>x3
-                                </span></div>
-                            <div class="car-details"><img src="https://www.allomycab.ma/images/laguage.svg"><span>x3
-                                </span></div>
-                            <!-- <div class="car-details"><img src="https://www.allomycab.ma/images/wifi.svg"></div>-->
-                        </div>
-                    </a>
-                </li>
-                <li class="dropdown-header">Premium</li>
-                <li class="car">
-                    <a id="my_car_3" title="Range Rover Sport" gallery_type="simple" carid="3" personnes="4"
-                        price_airport="80" bags="6" carcode="rs" price_min="80" order="20"
-                        price_day="250" price_half="180" price_km="2" hour_rate="25" available="1"
-                        carname="Range Rover Sport">
-                        <img src="https://www.allomycab.ma/images/car_rs.jpg" width="80"
-                            alt="Range Rover Sport" />
-                        <span> Range Rover Sport </span>
-                        <div style="float:right; padding: 1.5% 1%;">
-                            <div class="car-details"><img src="https://www.allomycab.ma/images/men.svg"><span>x4
-                                </span></div>
-                            <div class="car-details"><img src="https://www.allomycab.ma/images/laguage.svg"><span>x6
-                                </span></div>
-                            <!-- <div class="car-details"><img src="https://www.allomycab.ma/images/wifi.svg"></div>-->
-                        </div>
-                    </a>
-                </li>
-                <li class="car">
-                    <a id="my_car_2" title="Range Rover Vogue" gallery_type="simple" carid="2" personnes="4"
-                        price_airport="110" bags="6" carcode="rv" price_min="110" order="30"
-                        price_day="390" price_half="270" price_km="2.3" hour_rate="30" available="1"
-                        carname="Range Rover Vogue">
-                        <img src="https://www.allomycab.ma/images/car_rv.jpg" width="80"
-                            alt="Range Rover Vogue" />
-                        <span> Range Rover Vogue </span>
-                        <div style="float:right; padding: 1.5% 1%;">
-                            <div class="car-details"><img src="https://www.allomycab.ma/images/men.svg"><span>x4
-                                </span></div>
-                            <div class="car-details"><img src="https://www.allomycab.ma/images/laguage.svg"><span>x6
-                                </span></div>
-                            <!-- <div class="car-details"><img src="https://www.allomycab.ma/images/wifi.svg"></div>-->
-                        </div>
-                    </a>
-                </li>
-                <li class="car">
-                    <a id="my_car_1" title="Mercedes S Class" gallery_type="simple" carid="1" personnes="3"
-                        price_airport="135" bags="4" carcode="ms" price_min="135" order="40"
-                        price_day="450" price_half="300" price_km="2.7" hour_rate="35" available="1"
-                        carname="Mercedes S Class">
-                        <img src="https://www.allomycab.ma/images/car_ms.jpg" width="80"
-                            alt="Mercedes S Class" />
-                        <span> Mercedes S Class </span>
-                        <div style="float:right; padding: 1.5% 1%;">
-                            <div class="car-details"><img src="https://www.allomycab.ma/images/men.svg"><span>x3
-                                </span></div>
-                            <div class="car-details"><img src="https://www.allomycab.ma/images/laguage.svg"><span>x4
-                                </span></div>
-                            <!-- <div class="car-details"><img src="https://www.allomycab.ma/images/wifi.svg"></div>-->
-                        </div>
-                    </a>
                 </li> --}}
             </ul>
 
@@ -244,14 +163,14 @@
                 class="form-control departSelector depart" placeholder="Departure : adress, hotel, airport..."
                 name="depart" id="depart">
             <a href="" class="geolocalize-me" title="My location" id="geo_depart"><img
-                    src="https://www.allomycab.ma/images/localize.svg" alt="geolocalisation" /></a>
+                    src="{{ asset('images/localize.svg') }}" alt="geolocalisation" /></a>
         </div>
         <div class="form-group col-md-12">
             <input style="width:88%; float:left;" required autocomplete="off" type="text"
                 class="form-control arriveeSelector destination" placeholder="Destination : adress, hotel, airport..."
                 name="destination" id="destination">
             <a href="" class="geolocalize-me" title="My location" id="geo_destination"><img
-                    src="https://www.allomycab.ma/images/localize.svg" alt="geolocalisation" /></a>
+                    src="{{ asset('images/localize.svg') }}" alt="geolocalisation" /></a>
         </div>
 
         <div id="cars_prices" class="form-group col-md-12">

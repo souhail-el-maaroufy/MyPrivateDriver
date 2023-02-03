@@ -50,7 +50,7 @@ class CarEditscreen extends Screen
      */
     public function name(): ?string
     {
-        return 'CarEditscreen';
+        return 'CarEdit';
     }
 
     /**
@@ -103,13 +103,13 @@ class CarEditscreen extends Screen
 
             Layout::rows([
 
-                Cropper::make('car.image')
-                    ->targetId()
-                    ->upload_max_filesize()
-                    ->post_max_size()
-                    ->settings()
-                    ->width(500)
-                    ->height(500),
+                // Cropper::make('car.image')
+                //     ->targetId()
+                //     ->upload_max_filesize()
+                //     ->post_max_size()
+                //     ->settings()
+                //     ->width(500)
+                //     ->height(500),
 
 
                 Upload::make('car.attachment')
@@ -199,7 +199,8 @@ class CarEditscreen extends Screen
                     Button::make('Add Driver')
                         ->icon('plus')
                         ->type(Color::SECONDARY())
-                        ->method('Adddriver')
+                       
+                        ->route('platform.driver.edit')
 
                 ]),
 
@@ -231,10 +232,10 @@ class CarEditscreen extends Screen
         Alert::message('You have successfully created a category.');
     }
 
-    public function Adddriver()
-    {
-        return redirect()->route('platform.driver.edit');
-    }
+    // public function Adddriver()
+    // {
+    //     return back()->route('platform.driver.edit');
+    // }
 
     public function Create_car(Car $car, Request $request)
     {

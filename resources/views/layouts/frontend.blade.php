@@ -19,31 +19,32 @@
     <meta property="og:type" content="website" />
     <meta property="og:author" content="AlloMyCab" />
     <!--share twitter settings-->
-    <meta name="twitter:title" content="Private driver in Marrakech, Casablanca, morocco airport transfers">
+    {{-- <meta name="twitter:title" content="Private driver in Marrakech, Casablanca, morocco airport transfers">
     <meta name="twitter:description"
         content="Book your Private driver in morocco airport transfer Marrakech &amp; casablanca &amp; your trips everywhere in morocco, its Simpleand fast">
     <meta name="twitter:site" content="https://www.allomycab.ma">
     <meta name="twitter:image" content="https://www.allomycab.ma/images/allomycab-share-en.jpg">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="author" content="the-code.info" />
+    <meta name="author" content="the-code.info" /> --}}
     <link rel="icon" href="{{ asset('images/favicon.png') }}" defer />
     <link rel="stylesheet" href="{{ asset('css/animate.css') }}" defer>
     <link rel="stylesheet" href="{{ asset('css/icomoon.css') }}" defer>
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}" defer>
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}" defer>
-    <link rel="stylesheet" href="{{ asset('css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/themify-icons.css') }}" >
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" defer>
     <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}" defer>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" defer>
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}" >
+
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700&display=swap" rel="stylesheet" defer>
 
-    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> --}}
-
-    <!--<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">-->
     <script src="{{ asset('js/modernizr-2.6.2.min.js') }}" defer></script>
-
 
 
     <script src="{{ asset('js/jquery.js') }}"></script>
@@ -58,8 +59,9 @@
     <script type="text/javascript" src="{{ asset('back/plugins/daterangepicker/daterangepicker.js') }}" defer></script>
     <link rel="stylesheet" type="text/css" href="{{ asset('back/plugins/daterangepicker/daterangepicker.css') }}" />
     <link rel="canonical" href="https://www.allomycab.ma/en" />
-
-    @vite(['resources/css/app.css', 'resources/js/app.js']);
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body>

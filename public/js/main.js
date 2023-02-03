@@ -146,8 +146,8 @@
             smartSpeed: 800,
             autoHeight: true,
             navText: [
-                "<i class='ti-arrow-left owl-direction'></i>",
-                "<i class='ti-arrow-right owl-direction'></i>",
+                "<i class='fa-solid fa-arrow-left'></i>",
+                "<i class='fa-solid fa-arrow-right'></i>",
             ],
             responsive: {
                 0: {
@@ -171,8 +171,8 @@
             smartSpeed: 800,
             autoHeight: true,
             navText: [
-                "<i class='ti-arrow-left owl-direction'></i>",
-                "<i class='ti-arrow-right owl-direction'></i>",
+                "<i class='fa-solid fa-arrow-left'></i>",
+                "<i class='fa-solid fa-arrow-right'></i>",
             ],
         });
     };
@@ -539,7 +539,7 @@
         );
     });
     $(document).ready(function () {
-        $.each(["#simple", "#hourly"], function (_0x9596x43, _0x9596x21) {
+        $.each(["#simple", "#hourly",], function (_0x9596x43, _0x9596x21) {
             $(_0x9596x21 + "_form .cars a").click(function () {
                 var _0x9596x44 = $(this).attr("personnes");
                 var _0x9596x45 = $(this).attr("bags");
@@ -549,10 +549,8 @@
                 if (_0x9596x46 > 0) {
                     var _0x9596x49 =
                         "<img  class='car_img' src='" +
-                        assest +
-                        "images/car_" +
                         _0x9596x47 +
-                        ".jpg'/>";
+                        "'/>";
                     var _0x9596x4a =
                         "<ul class='details'><li><img src='" +
                         assest +
@@ -586,12 +584,8 @@
                             "-b.jpg' title='" +
                             _0x9596x48 +
                             "'><img src='" +
-                            assest +
-                            "images/cars/" +
                             _0x9596x47 +
-                            "-" +
-                            _0x9596xe +
-                            "-s.jpg'></a>";
+                            "'></a>";
                         _0x9596xe++;
                     }
                     $(_0x9596x21 + "_form #gall").html(_0x9596x4b);
@@ -1104,13 +1098,13 @@
                 _0x9596x71 += "<div id='map-canvas'></div>";
                 _0x9596x71 += "<div class='journey-info'>";
                 _0x9596x71 +=
-                    "<div class='dist-duration-info'><i class='ti-timer' style=''></i>" +
+                    "<div class='dist-duration-info'><i style='margin-right:4px;' class='fa-solid fa-clock'></i>" +
                     text_duration +
                     "<span class='form_infos' style='direction: ltr;'>" +
                     _0x9596x67 +
                     "</span></div>";
                 _0x9596x71 +=
-                    "<div class='dist-duration-info'><i class='ti-arrows-horizontal'></i>" +
+                    "<div class='dist-duration-info'><i style='margin-right:4px;' class='fa-solid fa-arrows-left-right'></i>" +
                     text_distance +
                     "<span class='form_infos' style='direction: ltr;'>" +
                     _0x9596x66 +
@@ -1417,7 +1411,7 @@
                 window["estimated_days"] = $(_0x9596x21 + "_form .estimated_days").val();
                 window["estimated_cars"] = $(_0x9596x21 + "_form .estimated_cars").val();
                 if (_0x9596x46 > 0) {
-                    var _0x9596x49 = "<img  class='car_img' src='" + assest + "images/car_" + _0x9596x47 + ".jpg'/>";
+                    var _0x9596x49 = "<img  class='car_img' src='" + _0x9596x47 + "'/>";
                     var _0x9596x4a =
                         "<ul class='details'><li><img src='" +
                         assest +
@@ -1447,12 +1441,8 @@
                             "' title='" +
                             _0x9596x48 +
                             "'><img src='" +
-                            assest +
-                            "images/cars/" +
                             _0x9596x47 +
-                            "-" +
-                            _0x9596xe +
-                            "-s.jpg'></a>";
+                            "'></a>";
                         _0x9596xe++;
                     }
                     $(_0x9596x21 + "_form #gall").html(_0x9596x4b);
@@ -1678,7 +1668,7 @@
             var _0x9596x71 = "";
             var _0x9596x84 = Math.round(_0x9596x97 * window["MAD"]);
             _0x9596x71 +=
-                "<div class='total-info'><i class='ti-arrows-horizontal'></i> " +
+                "<div class='total-info'><i style='margin-right:4px;' class='fa-solid fa-arrows-left-right'></i> " +
                 PRIXTOTAL +
                 " :  <span class='form_infos'>" +
                 _0x9596x97 +
@@ -1743,3 +1733,24 @@
 {
     /* <wdsssssaxd */
 }
+
+var swiper = new Swiper(".review-slider", {
+    loop:true,
+    spaceBetween: 20,
+    autoplay:{
+        deplay:7500,
+        disableOnInteraction:false,
+    },
+    centeredSlides:true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1020: {
+        slidesPerView: 3,
+      },
+    },
+  });

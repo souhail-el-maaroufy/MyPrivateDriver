@@ -33,16 +33,6 @@ class CarListLayout extends Table
     {
         return [
 
-            TD::make('image','Image')->align(TD::ALIGN_CENTER)
-            ->render(function(Car $car){
-                // $car_image=Car::find(3)->attachment()->get();
-                // return "<img src='{$car_image}'
-                //               alt='sample'
-                //               style='width: 10px;height: 60px;'
-                //               class='mw-100 d-block img-fluid rounded-1 w-100'>";
-                // ,oooo;k
-            }),
-
             TD::make('name','name')->align(TD::ALIGN_CENTER)
             ->sort()
             ->render(function(Car $car){

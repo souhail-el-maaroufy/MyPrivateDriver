@@ -15,7 +15,7 @@ body {
     padding: 20px;
     border-radius: 4px;
     box-shadow: 0 1px 11px 0 rgba(0, 0, 0, .1);
-    background-color: #fff;
+    background-color: #333;
     width: 100%;
     display: inline-block
 }
@@ -56,7 +56,7 @@ body {
 }
 
 a {
-    color: #4c89e0;
+    color: #bf9c60;
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s
@@ -65,7 +65,7 @@ a {
 a:active,
 a:focus,
 a:hover {
-    color: #4c89e0;
+    color:#f28b00;
     outline: 0;
     text-decoration: none
 }
@@ -87,7 +87,7 @@ h6 {
     margin: 0 0 20px
 }
 
-::-webkit-selection {
+/* ::-webkit-selection {
     color: #fff;
     background: #4c89e0
 }
@@ -100,15 +100,23 @@ h6 {
 ::selection {
     color: #fff;
     background: #4c89e0
-}
+} */
 
 .gtco-container {
     max-width: 1140px;
     position: relative;
     margin: 0 auto;
     padding-left: 15px;
-    padding-right: 15px
+    padding-right: 15px;
 }
+/* .gtco-container .title-gtco-container{
+    padding: 15px;
+    margin: 15px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+} */
+
 
 .gtco-nav {
     margin: 0;
@@ -225,7 +233,7 @@ h6 {
 .gtco-nav ul li a:active,
 .gtco-nav ul li a:focus,
 .gtco-nav ul li a:hover {
-    color: #000
+    color: #f28b00
 }
 
 .gtco-nav ul li.has-dropdown {
@@ -294,7 +302,7 @@ h6 {
 }
 
 .gtco-nav ul li.has-dropdown .dropdown li a:hover {
-    color: #000
+    color:#f28b00
 }
 
 .gtco-nav ul li.has-dropdown .dropdown li.active>a {
@@ -332,7 +340,7 @@ h6 {
 }
 
 .gtco-nav ul li.active>a {
-    color: #4c89e0 !important;
+    color: #bf9c60 !important;
     font-weight: 700
 }
 
@@ -454,7 +462,7 @@ h6 {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(39, 56, 80, .9)
+    /* background: rgba(51, 51, 51, 0.829) */
 }
 
 .gtco-cover>.gtco-container {
@@ -728,7 +736,7 @@ form label {
 #gtco-counter .counter {
     font-size: 50px;
     margin-bottom: 10px;
-    color: #4c89e0;
+    color: #bf9c60;
     font-weight: 100;
     display: block
 }
@@ -738,7 +746,7 @@ form label {
     text-transform: uppercase;
     color: rgba(0, 0, 0, .5);
     letter-spacing: .1em;
-    color: #4c89e0;
+    color: #bf9c60;
     font-weight: 700
 }
 
@@ -781,7 +789,7 @@ form label {
 .gtco-section {
     padding: 4em 0;
     clear: both;
-    position: relative
+    position: relative;
 }
 
 #gtco-footer a:hover {
@@ -854,7 +862,7 @@ form label {
     height: 90px;
     font-size: 40px;
     line-height: 40px;
-    color: #4c89e0
+    color: #bf9c60
 }
 
 .feature-center h3,
@@ -926,7 +934,7 @@ form label {
     margin-left: -25px;
     height: 2px;
     left: 50%;
-    background: #01d4ff
+    background: #f28b00
 }
 
 .gtco-heading p {
@@ -1707,7 +1715,7 @@ form label {
 
 .btn-white.btn-outline {
     color: #fff;
-    background-color: #3dd3c7
+    background-color: #ffb119
 }
 
 .btn-white.btn-outline:active,
@@ -1766,6 +1774,7 @@ form label {
     padding: 10px;
     box-shadow: none;
     background: 0 0;
+    color: #777777;
     border: 1px solid #f3f3f3;
     height: 46px;
     font-size: 14px;
@@ -1802,7 +1811,7 @@ form label {
 }
 
 .features {
-    background-color: #eff7ff;
+    background-color: #333;
     display: flex
 }
 
@@ -1821,7 +1830,12 @@ form label {
     background-color: #fff;
     box-shadow: 0 1px 11px 0 rgba(0, 0, 0, .05);
     text-align: center;
-    margin-top: 20px
+    margin-top: 20px;
+    border-radius: 8%;
+}
+.feature-inner:hover{
+background-color: #ffb119;
+color: #fff;
 }
 
 .gtco-contact {
@@ -2024,7 +2038,7 @@ form label {
 
 #gtco-portfolio {
     padding: 3em 0;
-    background: #233142;
+    background: #333;
     background-repeat: repeat
 }
 
@@ -2063,7 +2077,7 @@ form label {
     padding: 0;
     margin: 0 0 10px 1%;
     list-style: none;
-    min-height: 400px;
+    height: 200px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2079,7 +2093,7 @@ form label {
 }
 
 #gtco-portfolio-list li a {
-    min-height: 400px;
+    height: 200px;
     padding: 2em;
     position: relative;
     width: 100%;
@@ -2233,12 +2247,12 @@ form label {
 }
 
 #gtco-portfolio-list li.one-half {
-    width: 49%
+    width: 32%
 }
 
 @media screen and (max-width:480px) {
     #gtco-portfolio-list li.one-half {
-        width: 100%
+        width: 50%
     }
 }
 
@@ -2352,7 +2366,7 @@ form label {
 .owl-theme .owl-dots .owl-dot span {
     width: 10px;
     height: 10px;
-    background: #4c89e0;
+    background: #f28b00;
     -webkit-transition: .2s;
     -o-transition: .2s;
     transition: .2s;
@@ -2361,13 +2375,13 @@ form label {
 
 .owl-theme .owl-dots .owl-dot span:hover {
     background: 0 0;
-    border: 2px solid #4c89e0
+    border: 2px solid #f28b00
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
     background: 0 0;
-    border: 2px solid #4c89e0
+    border: 2px solid #ffb119
 }
 
 .booking-form .btn-submit {
@@ -2378,7 +2392,7 @@ form label {
     box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, .1);
     cursor: pointer;
     position: relative;
-    background-color: #4c89e0;
+    background-color: #bf9c60;
     width: 100%;
     transition: .5s border-radius
 }
@@ -2435,7 +2449,7 @@ form label {
 
 .nav-tabs>li.active,
 .nav-tabs>li.active>a {
-    color: #4c89e0 !important;
+    color: #bf9c60 !important;
     font-weight: 700;
     box-shadow: 0 -8px 15px -7px rgba(0, 0, 0, .05)
 }
@@ -2484,7 +2498,7 @@ form label {
 
 .booking-form label {
     margin: 0;
-    color: #4d4d4d;
+    color: white;
     display: inline-flex;
     justify-content: center
 }
@@ -2513,12 +2527,12 @@ form label {
 
 .booking-form .time-choices .choice:hover {
     color: #fff;
-    background: #233142
+    background: #f28b00;
 }
 
 .booking-form .time-choices .active {
     color: #fff;
-    background: #344e87;
+    background: #bf9c60;
     border-radius: 4px;
     box-shadow: 0 1px 11px 0 rgba(0, 0, 0, .1)
 }
@@ -2689,7 +2703,7 @@ form label {
 }
 
 .booking-form .btn-submit:hover {
-    background: #233142 !important
+    background: #f28b00 !important
 }
 
 .booking-form [class^=ti-] {
@@ -2699,7 +2713,7 @@ form label {
 }
 
 .booking-form .form_infos {
-    color: #000;
+    color: white;
     font-weight: 400
 }
 
@@ -3399,7 +3413,7 @@ a.btn.btn-success.btn-submit.finalize-btn:after {
 
 .dropdown-header {
     font-weight: 700;
-    color: #344e87;
+    color: #bf9c60;
     padding: 0 8px !important;
     font-size: 14px;
     text-align: left;
@@ -3408,7 +3422,7 @@ a.btn.btn-success.btn-submit.finalize-btn:after {
 }
 
 .gtco-section.reviews {
-    background-color: #233142
+    background-color: white
 }
 
 #choose_car_hourly,
@@ -3537,12 +3551,12 @@ a.whatsapp-but {
 }
 
 #cars_prices ul a:hover {
-    background-color: #f1fbff;
+    background-color: hsl(38, 23%, 37%);
     color: inherit
 }
 
 .clicked {
-    background-color: #e4f7ff;
+    background-color: hsl(38, 23%, 68%);
     color: inherit
 }
 
@@ -3562,7 +3576,7 @@ a.whatsapp-but {
 
 #cars_prices .car-price {
     color: #fff;
-    background-color: #0034cc;
+    background-color: #bf9c60;
     padding: 2px 4px;
     border-radius: 4px;
     margin-top: 16px;
@@ -3573,7 +3587,7 @@ a.whatsapp-but {
 }
 
 #cars_prices .car-name {
-    color: #000;
+    color: white;
     margin-top: 16px;
     margin-left: 6px;
     display: inherit;
@@ -3826,7 +3840,7 @@ a[href^="https://maps.google.com/maps"] {
 }
 
 .total-info {
-    color: #1349a0;
+    color: #bfb199;
     font-size: 13px;
     text-align: left;
     border-bottom: dotted 1px #d9d9d9;
@@ -3886,7 +3900,7 @@ a[href^="https://maps.google.com/maps"] {
 .am-pm {
     font-size: 14px;
     font-weight: 700;
-    color: #000;
+    color: white;
     direction: ltr
 }
 
@@ -3905,7 +3919,8 @@ a[href^="https://maps.google.com/maps"] {
 
 #infos {
     display: inline-flex;
-    background-color: #f1f1f1;
+    background-color: rgba(51, 51, 51, 0.505);
+    color: #bf9c60;
     margin: 20px 0 0 0;
     padding: 10px;
     border-radius: 6px
@@ -3920,4 +3935,95 @@ a[href^="https://maps.google.com/maps"] {
 .disabled-link {
     pointer-events: none;
     cursor: default
+}
+.customr-feed span{
+    color:#ffb119 ;
+}
+.customr-feed h1{
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.customr-feed p{
+    font-weight: 300;
+    font-size: 18px;
+}
+.customr-feed i{
+    padding-top: 22px;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    float:left;
+    font-size: 3.5rem;
+    background-color: #000;
+    color: #ffb119;
+    border-radius:15%;
+}
+.customr-feed i:hover{
+    padding-top: 27px;
+    width: 80px;
+    height: 80px;
+    font-size: 3rem;
+    background-color: #ffb119;
+    color: #000;
+    border-radius: 5%;
+}
+.customr-feed h4{
+    font-weight: 700;
+    font-style: italic;
+}
+
+.customr-feed .sub-text{
+    float:right;
+    width:75%;
+}
+
+
+
+.review .review-slider .box:hover{
+    border-radius: 20%;
+    background-color:#f28b00 ;
+    color: #000;
+}
+.review .review-slider{
+    padding: 1rem;
+}
+.review .review-slider .box{
+   background: #fff;
+   border: solid #bf9c60 2px;
+   border-radius: 1.5rem;
+   text-align: center;
+   padding: 3rem 2rem;
+   outline-offset: -1rem;
+   outline: var(--outline);
+   box-shadow: var(--box-shadow);
+   transition: .2s linear;
+}
+.gtco-section .reviews{
+    background: #333;
+}
+
+.review .review-slider .box:hover{
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+}
+.review .review-slider .box img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+.review .review-slider .box p{
+    padding: 1rem 0;
+    line-height: 1.8;
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+.review .review-slider .box h3{
+    padding-bottom: .5rem;
+    color: var(--black);
+    font-size: 2.2rem;
+}
+.review .review-slider .box .stars i{
+    color: var(--brane);
+    font-size: 1.7rem;
 }

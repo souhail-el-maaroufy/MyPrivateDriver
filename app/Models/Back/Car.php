@@ -49,4 +49,14 @@ class Car extends Model
     {
         return $this->hasMany(Reservation_Details::class,'car_model','id');
     }
+
+    /**
+     * Get the categories that owns the Car
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function categories()
+    {
+        return $this->belongsTo(Category::class, 'category_id');
+    }
 }

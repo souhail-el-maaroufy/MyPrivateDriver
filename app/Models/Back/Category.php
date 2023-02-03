@@ -14,4 +14,14 @@ class Category extends Model
         'name',
         'sub_name'
     ];
+
+    /**
+     * Get all of the cars for the Category
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function cars()
+    {
+        return $this->hasMany(Car::class);
+    }
 }

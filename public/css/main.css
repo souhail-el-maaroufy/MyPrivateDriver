@@ -1,0 +1,88 @@
+.our-sevices-img{
+    height: 200px;
+    width: 250px;
+    margin: 18px;
+    border-radius: 12.5%;
+}
+.our-sevices-title{
+    font-weight: 600;
+    font-style: italic;
+    color: #bf9c60 !important;
+}
+.our-sevices-text{
+    text-align: center;
+}
+.btn-see-more{
+    font-style: italic;
+    font-weight: 400;
+    border: solid 1.5px #f28b00;
+    border-radius: 12.5%;
+    padding: 10px;
+    background: #f28b00;
+    color: white;
+}
+.btn-see-more:hover{
+    color: #bf9c60;
+    background: #f4f4f4;
+}
+.margin{
+    margin-top: 50px;
+    margin-bottom: 65px;
+}
+.why-choos-us-text{
+    text-align: center;
+    padding: 7px;
+}
+.why-choos-us-title{
+    font-weight: 600;
+    font-style: italic;
+    color: #bf9c60 !important;
+}
+.why-choos-us-icon{
+    height:130px;
+    border: solid #bf9c60;
+    border-radius: 10%;
+    margin-bottom: 20px;
+}
+.why-choos-us-icon:hover{
+    border: solid #f28b00;
+    border-radius: 15%;
+    transform: rotate(10deg);
+}
+.why-choos-us-img{
+    height: auto;
+    width:70px;
+    margin:30px;
+}
+.logo-footer{
+    height: auto;
+    width: 100px;
+    margin-bottom: 25px;
+}
+.logo-footer-text{
+    color: #bf9c60;
+    /* font-style: italic; */
+}
+.our-services-footer{
+    color: #bf9c60;
+    font-style: italic;
+}
+.our-services-footer li:hover{
+    color: #f28b00;
+}
+.countact-us-footer{
+    color: #bf9c60;
+    font-style: italic;
+    margin: 10px;
+}
+.form-reservation{
+    border: solid 2px;
+    border-radius: 5%;
+    margin-top: 10px;
+    padding: 10px;
+    width: 88%;
+    height: auto;
+}
+.form-reservation a{
+    color: #f4f4f4;
+}

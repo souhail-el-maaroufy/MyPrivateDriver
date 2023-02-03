@@ -129,7 +129,7 @@
             }
         }
     </style>
-    <div class="mt-5 mb-5 bg-white">
+    <div class="my-5 py-2 bg-white">
         <h3 class="text-center mt-5">Reservation</h3>
         <div class="row m-5">
             <div class="col-6 p-2">
@@ -166,6 +166,7 @@
                 </div>
 
             </div>
+            @if ($reservation_details->type == "SIMPLE")
             <div class="col p-2">
                 {{-- <h5 for="">Name car :{{ $car->name }}</h5> --}}
                 <label style="font-size: 16px;fondt-width:200;" class="m-3">Type : </label><span
@@ -190,6 +191,7 @@
                     style="font-size: 16px;fondt-width:200;" class="text-center"> $ {{ $data->estimated_price }} </span>
 
             </div>
+            @endif
         </div>
         <div class="row m-5">
             <h3 class="text-center">Customer information</h3>
@@ -213,15 +215,17 @@
                         style="font-size: 16px;fondt-width:200;"
                         class="text-center">{{ $reservation->created_at }}</span><br>
                 @endforeach
-                <label style="font-size: 16px;fondt-width:200;" class="m-3">Estimated cars : </label><span
-                    style="font-size: 16px;fondt-width:200;"
-                    class="text-center">{{ $reservation_details->estimated_cars }}</span><br>
-                <label style="font-size: 16px;fondt-width:200;" class="m-3">Estimated days : </label><span
-                    style="font-size: 16px;fondt-width:200;"
-                    class="text-center">{{ $reservation_details->estimated_days }}</span><br>
-                <label style="font-size: 16px;fondt-width:200;" class="m-3">Estimated personnes : </label><span
-                    style="font-size: 16px;fondt-width:200;"
-                    class="text-center">{{ $reservation_details->estimated_persons }}</span><br>
+               @if ($reservation_details->type == "PER_HOUR")
+               <label style="font-size: 16px;fondt-width:200;" class="m-3">Estimated cars : </label><span
+               style="font-size: 16px;fondt-width:200;"
+               class="text-center">{{ $reservation_details->estimated_cars }}</span><br>
+           <label style="font-size: 16px;fondt-width:200;" class="m-3">Estimated days : </label><span
+               style="font-size: 16px;fondt-width:200;"
+               class="text-center">{{ $reservation_details->estimated_days }}</span><br>
+           <label style="font-size: 16px;fondt-width:200;" class="m-3">Estimated personnes : </label><span
+               style="font-size: 16px;fondt-width:200;"
+               class="text-center">{{ $reservation_details->estimated_persons }}</span><br>
+               @endif
             </div>
         </div>
     </div>
