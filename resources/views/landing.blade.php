@@ -2,52 +2,10 @@
 
 @section('content')
     <header id="gtco-header" class="gtco-cover" role="banner"
-        style="background-image:url(https://www.allomycab.ma/images/img_bg_1.jpg);">
+        style="background-image:url({{asset('images/gallery/new/VTC-Cannes-Driver-1.jpg')}});">
         <div class="overlay"></div>
         <div class="gtco-container">
             <div class="row flexit">
-                {{-- <div class="col-md-5 col-md-offset-0 text-right">
-                    <div class="display-t">
-                        <div class="display-tc">
-                            <h1 class="animate-box-off" data-animate-effect="fadeInUp">
-                                Book your private driver in
-                                Morocco : trips and airport transfers
-                            </h1>
-                            <h3 class="animate-box-off white-text" data-animate-effect="fadeInUp">
-                                All over Morocco : Marrakech, Casablanca, Rabat, Fes, Tangier, Agadir...
-                            </h3>
-                            <p class='white-text'>
-                                <i style="color: #00ffb1; font-size: 20px;" class='ti-check-box'></i>
-                                Save up to 30% on your transfers <br />
-                                <i style="color: #00ffb1; font-size: 20px;" class='ti-check-box'></i>
-                                More than 5,234 transfers and cars providing <br />
-                                <i style="color: #00ffb1; font-size: 20px;" class='ti-check-box'></i>
-                                24/7 customer service
-                            </p>
-                            <p class="white-text animate-box-off mobile-hide ">
-                                Your private driver go along with you on all your trips and your
-                                <a href="#" class="link-text-white"
-                                    alt="Mohammed v airport transfer in Casablanca ( CMN )">
-                                    Mohammed v airport transfer in Casablanca ( CMN )
-                                </a>,
-                                <a href="#" class="link-text-white" alt="Marrakech Menara airport transfer ( RAK )">
-                                    Marrakech Menara airport transfer ( RAK )
-                                </a>
-                                and all over Morocco and its airports .
-                            </p>
-                            <a class="white-text animate-box-off header_arrow_p">
-                                Check Prices
-                                <img src="https://www.allomycab.ma/images/arrow.svg"
-                                    alt="EVALUATE THE PRICE: Private driver in Marrakech &amp; Casablanca airport transfer" />
-                            </a>
-                            <a class="white-text animate-box-off header_arrow_p_mobile">
-                                Check Prices
-                                <img src="https://www.allomycab.ma/images/arrow-down.svg"
-                                    alt="EVALUATE THE PRICE: Private driver in Marrakech &amp; Casablanca airport transfer" />
-                            </a>
-                        </div>
-                    </div>
-                </div> --}}
                 <div class="col-md-7 col-md-offset-0 form-holder">
                     <div class="display-t">
                         <div class="display-tc">
@@ -89,118 +47,45 @@
         </div>
     </header>
 
-    {{-- <div id="gtco" class="gtco-section reviews">
-        <div class="gtco-container gtco-heading">
-            <div class="col-md-12">
-                <h2 style="color:#fff;" class="text-center">Private driver car <br /> easy and fast transport</h2>
-            </div>
-            <div class="col-md-6">
-                    <ul class="avis">
-                        <li><img class="avis-img" src="https://www.allomycab.ma/images/avis_en.svg" alt="Customers reviews"></li>
-                        <li><img class="star" src="https://www.allomycab.ma/images/star.svg" alt="Customers reviews"></li>
-                        <li><img class="star" src="https://www.allomycab.ma/images/star.svg" alt="Customers reviews"></li>
-                        <li><img class="star" src="https://www.allomycab.ma/images/star.svg" alt="Customers reviews"></li>
-                        <li><img class="star" src="https://www.allomycab.ma/images/star.svg" alt="Customers reviews"></li>
-                        <li><img class="star" src="https://www.allomycab.ma/images/star.svg" alt="Customers reviews"></li>
-                        <li>(4.9/5) 550 Customers reviews</li>
-                    </ul>
-                </div>
-        </div>
-    </div> --}}
-
     <div id="gtco" class="gtco-section features no-padd">
         <div class="gtco-container margin">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box-off">
-                    <h2 style="color: white;">Our services</h2>
+                    <h1><span class="title_span">Our</span> services</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3 our-sevices-text">
                     <img class="our-sevices-img"
-                        src="{{ asset('images/les images private driver/Alcudia-airport-transfers.jpeg') }}" alt="">
+                        src="{{asset('images/gallery/new/Alcudia-airport-transfers.jpg')}}" alt="">
                     <h4 class="our-sevices-title">AIRPORT TRANSFERS </h4>
-                    <p>Lorem ipsum dolor sit amet consectetur
-                        obcaecati minima voluptas quaerat? Quibusdam voluptate soluta eligendi.</p>
+                    <p class="our-services-p">We offer a variety of vehicles to choose from, including private cars, shuttle buses, and taxis. With our online booking system and 24/7 support, you can easily arrange your airport transfer.</p>
                     <a class="btn-see-more" href="#"><span>See More</span></a>
                 </div>
                 <div class="col-md-3 our-sevices-text">
-                    <img class="our-sevices-img" src="{{ asset('images/les images private driver/driver.jpg') }}"
+                    <img class="our-sevices-img" src="{{ asset('images/gallery/new/driver.jpg') }}"
                         alt="">
                     <h4 class="our-sevices-title">RENT A DRIVER SERVICES</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur
-                        obcaecati minima voluptas quaerat? Quibusdam voluptate soluta eligendi.</p>
+                    <p class="our-services-p">Our experienced drivers will take care of all your transportation needs, allowing you to sit back, relax, and focus on what matters most.</p>
                     <a class="btn-see-more" href="#"><span>See More</span></a>
                 </div>
                 <div class="col-md-3 our-sevices-text">
                     <img class="our-sevices-img"
-                        src="{{ asset('images/les images private driver/saharadesertour_1-e1606936712182.jpeg') }}"
+                        src="{{ asset('images/gallery/new/saharadesertour_1-e1606936712182.jpg') }}"
                         alt="">
-                    <h4 class="our-sevices-title">DESSERT SAFARI TOURS</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur
-                        obcaecati minima voluptas quaerat? Quibusdam voluptate soluta eligendi.</p>
+                    <h4 class="our-sevices-title">DESERT SAFARI TOURS</h4>
+                    <p class="our-services-p">We will take you on a journey of discovery, filled with unforgettable experiences and memories.</p>
                     <a class="btn-see-more" href="#"><span>See More</span></a>
                 </div>
                 <div class="col-md-3 our-sevices-text">
                     <img class="our-sevices-img"
-                        src="{{ asset('images/les images private driver/Happy-Travelers-shutterstock_217190278.jpg') }}"
+                        src="{{ asset('images/gallery/new/Happy-Travelers-shutterstock_217190278.jpg') }}"
                         alt="">
                     <h4 class="our-sevices-title">CORPORATE BUSINESS TRAVEL</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur
-                        obcaecati minima voluptas quaerat? Quibusdam voluptate soluta eligendi.</p>
+                    <p class="our-services-p">Our experienced team will handle all aspects of your business trip with a focus on comfort and reliability to allow you to focus on your business. </p>
                     <a class="btn-see-more" href="#"><span>See More</span></a>
                 </div>
-
             </div>
-
-
-            {{-- <div class="review" id="review">
-                <h1 class="heading text-center">nos<span>chef</span></h1>
-                <div class="swiper review-slider">
-                         <div class="swiper-wrapper">
-                               <div class="swiper-slide box">
-                                   <img src="{{asset('images/icon-person.jpg')}}" alt="">
-                                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem quibusdam tempore dolore voluptatum amet expedita reprehenderit debitis.
-                                       Perspiciatis nam corporis facilis placeat perferendis ratione sint nesciunt, aspernatur repudiandae vero!</p>
-                                   <h3>maria deo</h3>
-                                   <div class="stars">
-                                       <i class="fas fa-star"></i>
-                                       <i class="fas fa-star"></i>
-                                       <i class="fas fa-star"></i>
-                                       <i class="fas fa-star-half-alt"></i>
-                                   </div>
-                               </div>
-        
-                               <div class="swiper-slide box">
-                                   <img src="{{asset('images/icon-person.jpg')}}" alt="">
-                                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem quibusdam tempore dolore voluptatum amet expedita reprehenderit debitis.
-                                       Perspiciatis nam corporis facilis placeat perferendis ratione sint nesciunt, aspernatur repudiandae vero!</p>
-                                   <h3>chef moha </h3>
-                                   <div class="stars">
-                                       <i class="fas fa-star"></i>
-                                       <i class="fas fa-star"></i>
-                                       <i class="fas fa-star"></i>
-                                       <i class="fas fa-star"></i>
-                                       <i class="fas fa-star-half-alt"></i>
-                                   </div>
-                               </div>
-        
-                               <div class="swiper-slide box">
-                                   <img src="{{asset('images/icon-person.jpg')}}" alt="">
-                                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem quibusdam tempore dolore voluptatum amet expedita reprehenderit debitis.
-                                       Perspiciatis nam corporis facilis placeat perferendis ratione sint nesciunt, aspernatur repudiandae vero!</p>
-                                   <h3>Philippe Etchebest </h3>
-                                   <div class="stars">
-                                       <i class="fas fa-star"></i>
-                                       <i class="fas fa-star"></i>
-                                       <i class="fas fa-star"></i>
-                                       <i class="fas fa-star"></i>
-                                       <i class="fas fa-star-half-alt"></i>
-                                   </div>
-                               </div>
-                    </div>
-               </div>
-           </div> --}}
 
         </div>
     </div>
@@ -212,26 +97,22 @@
                     <div class="col-md-12">
                         <div class="owl-carousel owl-carousel-fullwidth">
                             <div class="item"> <img
-                                    src="{{ asset('images/les images private driver/New folder/16504600769367.jpg') }}"
-                                    alt="Mercedes-Benz V-Class"> </div>
+                                    src="{{ asset('images/gallery/new/slide/image_1.jpg') }}"
+                                    alt="image_1"> </div>
+                            <div class="item"> <img src="{{asset('images/gallery/new/slide/image_2.jpg')}}"
+                                    alt="image_2"> </div>
                             <div class="item"> <img
-                                    src="{{ asset('images/les images private driver/New folder/51.jpg') }}"
-                                    alt="Mercedes-Benz E-Class"> </div>
+                                    src="{{ asset('images/gallery/new/slide/image_3.jpg') }}"
+                                    alt="image_3"> </div>
                             <div class="item"> <img
-                                    src="{{ asset('images/les images private driver/New folder/594abc0e7c0df2.62631465.jpg') }}"
-                                    alt="Mercedes-Benz E-Class"> </div>
-                            <div class="item"> <img src="{{asset('images/les images private driver/New folder/Mon-chauffeur-privé.jpg')}}"
-                                    alt="Range Rover Vogue"> </div>
-                            <div class="item">
-                                <video width="100%" controls="controls"
-                                    src="https://www.allomycab.ma/videos/marrakech-video.mp4" type="video/mp4"></video>
-                            </div>
-                            <div class="item"> <img
-                                    src="{{ asset('images/les images private driver/New folder/Mon-chauffeur-privé.jpg') }}"
-                                    alt="Mercedes-Benz V-Class"> </div>
-                            <div class="item"> <img
-                                    src="{{ asset('images/les images private driver/New folder/voiture-avec-chauffeur-prive-casablanca.jpg') }}"
-                                    alt="Mercedes-Benz V-Class"> </div>
+                                    src="{{ asset('images/gallery/new/slide/image_4.jpg') }}"
+                                    alt="image_4"> </div>
+                                    <div class="item"> <img
+                                        src="{{ asset('images/gallery/new/slide/image_5.jpg') }}"
+                                        alt="image_5"> </div>
+                                        <div class="item"> <img
+                                            src="{{ asset('images/gallery/new/slide/image_6.jpg') }}"
+                                            alt="image_6"> </div>
                         </div>
                     </div>
                 </div>
@@ -239,15 +120,14 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-12 col-md-offset-1  gtco-heading animate-box-off">
-                        <h2>private driver in Morocco : Marrakech, Casablanca, Rabat, Agadir and all over the country.</h2>
-                        <p>We are a platforme of professional Chauffeur service with cars and sedans. We are specialized in
-                            the transportation of people in Morocco Marrakech , Casablanca, Rabat ... an alternative to
-                            Moroccan taxis. We work with professionals
-                            tourists and individuals to defend the Made in Morocco product of the Private driver profession.
-                            We guarantee the satisfaction of our customers till 100%. We go along with you during all your
-                            trips in Marrakech and its
-                            suburbs. We are also available for your business trips parties, weddings, meetings and
-                            conferences , your airport transfer & pick up in casablanca, marrakech and the other cities.</p>
+                        <h1><span class="title_span">PRIVATE DRIVER </span> , MARRAKECH </h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                        <p style="padding-left: 20px">At Private Driver, we provide a premium transportation service in Morocco, Marrakech. 
+                            We offer a stress-free, safe, and comfortable transportation solution. Our team of experienced and licensed drivers are dedicated to providing an exceptional level of service, tailored to meet your specific needs. Whether you're in Marrakech for business or leisure, our drivers are available 24/7 to take you wherever you need to go. With a fleet of top-quality vehicles and a focus on comfort and convenience, our Private Driver service is the perfect solution for those who value ease, reliability, and style. Book your Private Driver today and experience a seamless transportation experience in Marrakech, Morocco.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -258,50 +138,44 @@
         <div class="gtco-container margin">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box-off">
-                    <h2 style="color: white">Why Choose Us</h2>
+                    <h1><span class="title_span">Why</span> Choose Us</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3 why-choos-us-text">
                     <div class="why-choos-us-icon">
-                        <img class="why-choos-us-img" src="{{ asset('images/les images private driver/dark_01.png') }}"
+                        <img class="why-choos-us-img" src="{{ asset('images/gallery/new/dark_01.png') }}"
                             alt="">
                     </div>
 
                     <h4 class="why-choos-us-title">EASY ONLINE BOOKING</h4>
-                    <p>When you book the service using our dedicated online portal, you will be kept informed of the
-                        progress of your vehicle via our dispatch team .</p>
+                    <p>By using our online booking portal, you will be able to secure our service with ease and receive updates on your vehicle's progress from our dispatch team .</p>
                 </div>
                 <div class="col-md-3 why-choos-us-text">
                     <div class="why-choos-us-icon">
-                        <img class="why-choos-us-img" src="{{ asset('images/les images private driver/dark_02.png') }}"
+                        <img class="why-choos-us-img" src="{{ asset('images/gallery/new/dark_02.png') }}"
                             alt="">
                     </div>
 
                     <h4 class="why-choos-us-title">PROFESSIONAL DRIVERS</h4>
-                    <p>All of our drivers undergo intensive assessment of their driving abilities prior to any offer of
-                        employment.
-                        They are tested on their knowledge of the Qatar Traffic Rules and all have in- depth knowledge of
-                        the roads and locations of Qatar .</p>
+                    <p>We ensure the proficiency of our drivers by conducting thorough evaluations of their driving skills before hiring them. They are thoroughly tested on their understanding of Qatar's traffic regulations and are well-versed in the roads and destinations of Morocco.</p>
                 </div>
                 <div class="col-md-3 why-choos-us-text">
                     <div class="why-choos-us-icon">
                         <img style="width: 110px;height:auto;margin-top:50px;"
-                            src="{{ asset('images/les images private driver/dark_03.png') }}" alt="">
+                            src="{{ asset('images/gallery/new/dark_03.png') }}" alt="">
                     </div>
 
                     <h4 class="why-choos-us-title">VARIETY OF CAR BRANDS</h4>
-                    <p>All of our vehicles are subjected to daily roadworthiness checks and are dealer-serviced at regular
-                        intervals to ensure that all vehicles within our fleet are safe and clean .</p>
+                    <p>We prioritize the safety and cleanliness of our vehicles by conducting daily inspections and scheduling regular maintenance with dealers. This ensures that every car in our fleet is in top condition.</p>
                 </div>
                 <div class="col-md-3 why-choos-us-text">
                     <div class="why-choos-us-icon">
-                        <img class="why-choos-us-img" src="{{ asset('images/les images private driver/dark_04.png') }}"
+                        <img class="why-choos-us-img" src="{{ asset('images/gallery/new/dark_04.png') }}"
                             alt="">
                     </div>
                     <h4 class="why-choos-us-title">LONG TERM SPECIAL RATES</h4>
-                    <p>We understand that there are multiple Limousine providers in Qatar and our staff carry our market
-                        research to make sure we are always offering the most competitive service we are able to provide .
+                    <p>our team constantly analyzing market’s needs to ensure that our service remains as efficient and convenient for everyone .
                     </p>
                 </div>
             </div>
@@ -310,18 +184,14 @@
 
     <div id="" class="gtco-section reviews">
         <div class="gtco-container">
-
-            <div class="row customr-feed">
-                <div class="col-md-6">
-                    <img style="width:90%" src="{{ asset('images/airport-mohammed-v-transfer.jpg') }}" alt=""
-                        srcset="">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box-off">
+                    <h1><span class="title_span">Trusted Luxury</span> Car Services in Morocco</h1>
                 </div>
-                <div style="margin-top: 18px;" class="container col-md-6">
-                    <span>About Luxury Private Car Morocco</span>
-                    <h1>Trusted Luxury Car Services In All Over The World.</h1>
-                    <p>Luxury Private car Morocco is your private driver service that provides professional chauffeur
-                        services in Morocco. We offer airport transfers, private and shared car services,
-                        group transfers, group tours and excursions. Our Chauffeurs are fully licensed and experienced
+            </div>
+            <div class="row customr-feed">
+                <div class="container col-md-6">
+                    <p class="gtco-section-text">At Private Driver, we provide the most trusted luxury car services all over the world. Our commitment to excellence is evident in every aspect of our service, from the quality of our vehicles to the professionalism of our drivers. Whether you're in need of transportation for a special event, business trip, or just a night out on the town, our luxury car services offer the comfort, style, and convenience that you deserve. we focus on safety, reliability, and attention to detail. We are dedicated to making your transportation experience as smooth and enjoyable as possible. Book your trusted luxury car service today and experience the ultimate in comfort and style, wherever your travels take you.
                     </p>
 
 
@@ -330,8 +200,8 @@
                             <i class="fa-solid fa-map"></i>
                         </div>
                         <div class="sub-text">
-                            <h4>Long Distance Trip</h4>
-                            <p>Choosing the best luxury car for long distance trips and long-distance drives is a highly personal experience. Luckily, we can help you .</p>
+                            <h3>Long Distance Trip</h3>
+                            <p>Selecting the perfect luxury car for extended trips or long-distance drives is a personal matter. Fortunately, we are here to assist you .</p>
                         </div>
                     </div>
 
@@ -340,11 +210,15 @@
                             <i class="fa-solid fa-car"></i>
                         </div>
                         <div class="sub-text">
-                            <h4>Luxury Car Tour Services</h4>
-                            <p>Dependable, reliable, and all cars are fully inspected before each and every trip.</p>
+                            <h3>Luxury Car Tour Services</h3>
+                            <p> Our service is trustworthy, dependable, and all vehicles undergo thorough inspections prior to each trip .</p>
                         </div>
                     </div>
 
+                </div>
+                <div class="col-md-6">
+                    <img src="{{ asset('images/gallery/new/image.jpg') }}" alt=""
+                        srcset="">
                 </div>
             </div>
         </div>
@@ -354,7 +228,7 @@
         <div class="gtco-container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box-off">
-                    <h2>OUR LUXURIOUS CARS AND VANS</h2>
+                    <h1><span class="title_span">OUR LUXURIOUS</span> CARS AND VANS</h1>
                 </div>
             </div>
             <div class="row row-pb-md">
@@ -370,8 +244,9 @@
                                 </div>
                             </a>
                         </li>
+                   
                         <li class="one-half animate-box-off" data-animate-effect="fadeIn"
-                            style="background-image: url({{ asset('storage/2023/01/22/79fbbeda192d71661e2514b12d9dc167574d1c96.jpg') }}); ">
+                            style="background-image: url({{ asset('images/gallery/new/slide/image_3.jpg') }}); ">
                             <a href="#" class="color-4" title="#">
                                 <div class="case-studies-summary">
                                     {{-- <h3 class="white-text">Mercedes-Benz V-Class</h3> --}}
@@ -380,7 +255,7 @@
                             </a>
                         </li>
                         <li class="one-half animate-box-off" data-animate-effect="fadeIn"
-                            style="background-image: url({{ asset('images/gallery/img_17.jpg') }}); ">
+                            style="background-image: url({{ asset('images/gallery/new/slide/image_5.jpg') }}); ">
                             <a href="#" class="color-4" title="#">
                                 <div class="case-studies-summary">
                                     {{-- <h3 class="white-text">Mercedes-Benz V-Class</h3> --}}
@@ -389,16 +264,7 @@
                             </a>
                         </li>
                         <li class="one-half animate-box-off" data-animate-effect="fadeIn"
-                            style="background-image: url({{ asset('images/gallery/img_7.jpg') }}); ">
-                            <a href="#" class="color-4" title="#">
-                                <div class="case-studies-summary">
-                                    {{-- <h3 class="white-text">Mercedes-Benz V-Class</h3> --}}
-                                    <p> <i class="fa-sharp fa-solid fa-route"></i> Exterior appearance</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="one-half animate-box-off" data-animate-effect="fadeIn"
-                            style="background-image: url({{ asset('images/gallery/img_18.jpg') }}); ">
+                            style="background-image: url({{ asset('images/gallery/new/slide/image_2.jpg') }}); ">
                             <a href="#" class="color-4" title="#">
                                 <div class="case-studies-summary">
                                     {{-- <h3 class="white-text">Mercedes-Benz V-Class</h3> --}}
@@ -408,7 +274,7 @@
                         </li>
 
                         <li class="one-half animate-box-off" data-animate-effect="fadeIn"
-                            style="background-image: url({{ asset('images/gallery/img_14.jpg') }}); ">
+                            style="background-image: url({{asset('storage/2023/01/22/1bd120908ba5d0de221f2c292dd839c4a47e6549.jpg')}}); ">
                             <a href="#" class="color-4" title="#">
                                 <div class="case-studies-summary">
                                     {{-- <h3 class="white-text">Mercedes-Benz V-Class</h3> --}}
@@ -417,7 +283,7 @@
                             </a>
                         </li>
                         <li class="one-half animate-box-off" data-animate-effect="fadeIn"
-                            style="background-image: url({{ asset('images/gallery/img_10.jpg') }}); ">
+                            style="background-image: url({{ asset('storage/2023/01/22/5114032c4b222ee10c5d95223160713f817c852c.jpg') }}); ">
                             <a href="#" class="color-4" title="#">
                                 <div class="case-studies-summary">
                                     {{-- <h3 class="white-text">Mercedes-Benz V-Class</h3> --}}
@@ -425,24 +291,15 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="one-half animate-box-off" data-animate-effect="fadeIn"
-                            style="background-image: url({{ asset('images/gallery/img_19.jpg') }}); ">
-                            <a href="#" class="color-4" title="#">
-                                <div class="case-studies-summary">
-                                    {{-- <h3 class="white-text">Mercedes-Benz V-Class</h3> --}}
-                                    <p> <i class="fa-sharp fa-solid fa-route"></i> Exterior appearance</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="one-half animate-box-off" data-animate-effect="fadeIn"
+                        {{-- <li class="one-half animate-box-off" data-animate-effect="fadeIn"
                         style="background-image: url({{ asset('images/gallery/img_4.jpg') }}); ">
                         <a href="#" class="color-4" title="#">
                             <div class="case-studies-summary">
-                                {{-- <h3 class="white-text">Mercedes-Benz V-Class</h3> --}}
+                                <h3 class="white-text">Mercedes-Benz V-Class</h3>
                                 <p> <i class="fa-sharp fa-solid fa-route"></i> Exterior appearance</p>
                             </div>
                         </a>
-                    </li>
+                        </li> --}}
                     </ul>
                 </div>
             </div>
@@ -450,13 +307,12 @@
         </div>
     </div>
 
-    <div id="" class="gtco-section reviews">
+    <div id="" class="gtco-section reviews" style="background-size: cover;background-image: url({{asset('images/slide-01.jpg')}})">
         <div class="gtco-container">
 
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box-off">
-                    <h2 class="title-gtco-container">Customers Feedback</h2>
-                    {{-- <h4 class="title-gtco-container">Our Customer Reviews.</h4> --}}
+                    <h1 class="title-gtco-container"><span class="title_span">Customers</span> Feedback</h1>
                 </div>
             </div>
             <div class="row">
@@ -466,12 +322,12 @@
                         <div class="swiper review-slider">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide box">
-                                    <img src="{{ asset('images/icon-person.jpg') }}" alt="">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem quibusdam tempore
-                                        dolore voluptatum amet expedita reprehenderit debitis.
-                                        Perspiciatis nam corporis facilis placeat perferendis ratione sint nesciunt,
-                                        aspernatur repudiandae vero!</p>
+                                    <img src="{{ asset('images/gallery/new/icon-person.jpg') }}" alt="">
                                     <h3>maria deo</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem quibusdam tempore
+                                        dolore voluptatum amet expedita reprehenderit debitis.
+                                        Perspiciatis nam corporis facilis placeat perferendis ratione sint nesciunt,
+                                        aspernatur repudiandae vero!</p>
                                     {{-- <div class="stars">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -481,12 +337,12 @@
                                 </div>
 
                                 <div class="swiper-slide box">
-                                    <img src="{{ asset('images/icon-person.jpg') }}" alt="">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem quibusdam tempore
-                                        dolore voluptatum amet expedita reprehenderit debitis.
-                                        Perspiciatis nam corporis facilis placeat perferendis ratione sint nesciunt,
-                                        aspernatur repudiandae vero!</p>
+                                    <img src="{{ asset('images/gallery/new/icon-person.jpg') }}" alt="">
                                     <h3>Jon Monalizy </h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem quibusdam tempore
+                                        dolore voluptatum amet expedita reprehenderit debitis.
+                                        Perspiciatis nam corporis facilis placeat perferendis ratione sint nesciunt,
+                                        aspernatur repudiandae vero!</p>
                                     {{-- <div class="stars">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -497,12 +353,12 @@
                                 </div>
 
                                 <div class="swiper-slide box">
-                                    <img src="{{ asset('images/icon-person.jpg') }}" alt="">
+                                    <img src="{{ asset('images/gallery/new/icon-person.jpg') }}" alt="">
+                                    <h3>Philippe Etchebest </h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem quibusdam tempore
                                         dolore voluptatum amet expedita reprehenderit debitis.
                                         Perspiciatis nam corporis facilis placeat perferendis ratione sint nesciunt,
                                         aspernatur repudiandae vero!</p>
-                                    <h3>Philippe Etchebest </h3>
                                     {{-- <div class="stars">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -524,10 +380,8 @@
         <div class="gtco-container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box-off">
-                    <h2>Allomycab go along with you.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorem maiores consectetur qui
-                        necessitatibus quam explicabo modi ad esse, magni in quibusdam repellat eaque iusto. Unde eos porro
-                        alias corporis!</p>
+                    <h1><span class="title_span">APRIVATE DRIVER</span> GO ALONG WITH YOU .</h1>
+                    <p> Our service is trustworthy, dependable, and all vehicles undergo thorough inspections prior to each trip!</p>
                 </div>
             </div>
             <div class="row">

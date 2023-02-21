@@ -163,14 +163,14 @@
                 class="form-control departSelector depart" placeholder="Departure : adress, hotel, airport..."
                 name="depart" id="depart">
             <a href="" class="geolocalize-me" title="My location" id="geo_depart"><img
-                    src="{{ asset('images/localize.svg') }}" alt="geolocalisation" /></a>
+                    src="{{ asset('images/gallery/new/gps_PNG.png') }}" alt="geolocalisation" /></a>
         </div>
         <div class="form-group col-md-12">
             <input style="width:88%; float:left;" required autocomplete="off" type="text"
                 class="form-control arriveeSelector destination" placeholder="Destination : adress, hotel, airport..."
                 name="destination" id="destination">
             <a href="" class="geolocalize-me" title="My location" id="geo_destination"><img
-                    src="{{ asset('images/localize.svg') }}" alt="geolocalisation" /></a>
+                    src="{{ asset('images/gallery/new/gps_PNG.png') }}" alt="geolocalisation" /></a>
         </div>
 
         <div id="cars_prices" class="form-group col-md-12">

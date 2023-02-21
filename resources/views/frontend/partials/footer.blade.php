@@ -1,5 +1,5 @@
 <footer>
-    <div id="gtco-portfolio">
+    <div id="gtco-portfolio"  style="background-color: #333">
         <div class="gtco-container">
             {{-- <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box-off">
@@ -17,13 +17,11 @@
             <div class="row">
                 <div style="padding: 30px;" class="col-md-4">
                     <div>
-                        <img class="logo-footer" src="{{ asset('images/Taxi-Service-01-sdyhua.webp') }}" alt="">
+                        <img class="logo-footer" src="{{ asset('images/gallery/new/logo.png') }}" alt="">
                         <h3 class="white-text">Private Driver Car</h3>
                     </div>
                     <div class="logo-footer-text">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim rem dolor blanditiis asperiores,
-                            quaerat laboriosam iste quae sint facere.
-                            Sint et est eveniet tenetur consequatur expedita cupiditate. Eveniet, dicta perferendis!</p>
+                        <p>We provide professional chauffeur and car rental services in Marrakech and throughout Morocco. Our focus on hybrid and private drivers ensures a high-quality, Made in Morocco product, serving professionals, tourists, and individuals as an alternative to traditional taxis.</p>
                     </div>
                 </div>
                 <div style="padding: 30px;" class="col-md-4">

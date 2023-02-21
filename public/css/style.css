@@ -13,9 +13,9 @@ body {
 
 .booking-form {
     padding: 20px;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     box-shadow: 0 1px 11px 0 rgba(0, 0, 0, .1);
-    background-color: #333;
+    background-color: #fff;
     width: 100%;
     display: inline-block
 }
@@ -56,7 +56,7 @@ body {
 }
 
 a {
-    color: #bf9c60;
+    color: #888;
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s
@@ -65,7 +65,7 @@ a {
 a:active,
 a:focus,
 a:hover {
-    color:#f28b00;
+    color:#e7c51f;
     outline: 0;
     text-decoration: none
 }
@@ -82,9 +82,10 @@ h4,
 h5,
 h6 {
     color: #000;
-    font-family: 'Maven Pro', sans-serif;
+    /* font-family: 'Maven Pro', sans-serif; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 400;
-    margin: 0 0 20px
+    /* margin: 0 0 20px */
 }
 
 /* ::-webkit-selection {
@@ -153,7 +154,8 @@ h6 {
 }
 
 .gtco-nav #gtco-logo img {
-    height: 69px
+    height: 69px;
+    border-radius: 30%;
 }
 
 .gtco-nav #gtco-logo em {
@@ -194,7 +196,7 @@ h6 {
 }
 
 .white-text {
-    color: #fff
+    color: #f5cf16
 }
 
 @media screen and (max-width:768px) {
@@ -203,7 +205,7 @@ h6 {
         display: none
     }
     .white-text {
-        color: #fff;
+        color: #f5cf16;
         font-size: 13px
     }
 }
@@ -223,7 +225,7 @@ h6 {
 .gtco-nav ul li a {
     font-size: 14px;
     padding: 25px 14px;
-    color: rgba(0, 0, 0, .7);
+    color: #111;
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
@@ -233,7 +235,7 @@ h6 {
 .gtco-nav ul li a:active,
 .gtco-nav ul li a:focus,
 .gtco-nav ul li a:hover {
-    color: #f28b00
+    color: #f4ce15
 }
 
 .gtco-nav ul li.has-dropdown {
@@ -302,7 +304,7 @@ h6 {
 }
 
 .gtco-nav ul li.has-dropdown .dropdown li a:hover {
-    color:#f28b00
+    color:#e7c51f
 }
 
 .gtco-nav ul li.has-dropdown .dropdown li.active>a {
@@ -340,7 +342,7 @@ h6 {
 }
 
 .gtco-nav ul li.active>a {
-    color: #bf9c60 !important;
+    color: #e0c22e !important;
     font-weight: 700
 }
 
@@ -644,7 +646,7 @@ h6 {
     left: 0;
     top: .05em;
     font-family: icomoon;
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
@@ -736,7 +738,7 @@ form label {
 #gtco-counter .counter {
     font-size: 50px;
     margin-bottom: 10px;
-    color: #bf9c60;
+    color: #f5cf16;
     font-weight: 100;
     display: block
 }
@@ -746,7 +748,7 @@ form label {
     text-transform: uppercase;
     color: rgba(0, 0, 0, .5);
     letter-spacing: .1em;
-    color: #bf9c60;
+    color: #e7c51f;
     font-weight: 700
 }
 
@@ -926,15 +928,15 @@ form label {
     padding-bottom: 10px
 }
 
-.gtco-heading h2:before {
+.gtco-heading h1:before {
     position: absolute;
     bottom: 0;
     content: "";
     width: 50px;
     margin-left: -25px;
-    height: 2px;
+    height: 3px;
     left: 50%;
-    background: #f28b00
+    background: #f4ce15
 }
 
 .gtco-heading p {
@@ -1032,7 +1034,7 @@ form label {
 }
 
 .gtco-tabs .gtco-tab-nav li {
-    float: left;
+    /* float: left; */
     margin: 0;
     padding: 0;
     width: 25%;
@@ -1241,7 +1243,7 @@ form label {
 
 #gtco-footer .gtco-widget .gtco-quick-contact li i {
     width: 30px;
-    float: left;
+    /* float: left; */
     font-size: 18px;
     position: relative;
     margin-top: 4px;
@@ -1339,7 +1341,7 @@ form label {
     position: absolute;
     right: 0;
     font-family: icomoon;
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
@@ -1357,7 +1359,7 @@ form label {
 
 .gtco-nav ul li.has-dropdown>a:after {
     font-family: icomoon;
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
@@ -1599,7 +1601,7 @@ form label {
 
 .btn-success {
     background: #201e1f;
-    color: #fff;
+    color: #111;
     border: 1px solid #201e1f
 }
 
@@ -1811,7 +1813,6 @@ form label {
 }
 
 .features {
-    background-color: #333;
     display: flex
 }
 
@@ -2038,7 +2039,8 @@ color: #fff;
 
 #gtco-portfolio {
     padding: 3em 0;
-    background: #333;
+    /* background: #333; */
+    background-size: cover;
     background-repeat: repeat
 }
 
@@ -2392,13 +2394,13 @@ color: #fff;
     box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, .1);
     cursor: pointer;
     position: relative;
-    background-color: #bf9c60;
+    background-color: #f5cf16;
     width: 100%;
     transition: .5s border-radius
 }
 
 .booking-form .btn-submit:hover {
-    color: #fff;
+    color: #111;
     background-image: linear-gradient(236deg, #00b74d 100%, #118c66 1%);
     border-radius: 16px;
     transition: .5s
@@ -2449,14 +2451,14 @@ color: #fff;
 
 .nav-tabs>li.active,
 .nav-tabs>li.active>a {
-    color: #bf9c60 !important;
+    color: #f5cf16 !important;
     font-weight: 700;
     box-shadow: 0 -8px 15px -7px rgba(0, 0, 0, .05)
 }
 
 .nav-tabs>li,
 .nav-tabs>li>a {
-    color: #a1a1a1 !important;
+    color: #111 !important;
     font-weight: 700
 }
 
@@ -2527,12 +2529,12 @@ color: #fff;
 
 .booking-form .time-choices .choice:hover {
     color: #fff;
-    background: #f28b00;
+    background: #e7c51f;
 }
 
 .booking-form .time-choices .active {
-    color: #fff;
-    background: #bf9c60;
+    color: #111;
+    background: #f5cf16;
     border-radius: 4px;
     box-shadow: 0 1px 11px 0 rgba(0, 0, 0, .1)
 }
@@ -2703,7 +2705,7 @@ color: #fff;
 }
 
 .booking-form .btn-submit:hover {
-    background: #f28b00 !important
+    background: #e7c51f !important
 }
 
 .booking-form [class^=ti-] {
@@ -3920,7 +3922,6 @@ a[href^="https://maps.google.com/maps"] {
 #infos {
     display: inline-flex;
     background-color: rgba(51, 51, 51, 0.505);
-    color: #bf9c60;
     margin: 20px 0 0 0;
     padding: 10px;
     border-radius: 6px
@@ -3976,21 +3977,31 @@ a[href^="https://maps.google.com/maps"] {
 .customr-feed .sub-text{
     float:right;
     width:75%;
+    padding-left: 10px;
+}
+.customr-feed .col-md-6 img{
+    width:100%;
+    border-radius:2%;
+    position: relative;
+    animation: mymove 2s 1;
+    animation-timing-function: linear;
+}
+@keyframes mymove{
+    from {right: 300px;}
+    to {right: 0px;}
 }
 
-
-
 .review .review-slider .box:hover{
-    border-radius: 20%;
-    background-color:#f28b00 ;
-    color: #000;
+    border-radius: 11%;
+    /* background-color:#f28b00 ;
+    color: #000; */
 }
 .review .review-slider{
     padding: 1rem;
 }
 .review .review-slider .box{
    background: #fff;
-   border: solid #bf9c60 2px;
+   border: solid #666 1.5px;
    border-radius: 1.5rem;
    text-align: center;
    padding: 3rem 2rem;
@@ -3999,9 +4010,9 @@ a[href^="https://maps.google.com/maps"] {
    box-shadow: var(--box-shadow);
    transition: .2s linear;
 }
-.gtco-section .reviews{
+/* .gtco-section .reviews{
     background: #333;
-}
+} */
 
 .review .review-slider .box:hover{
     outline: var(--outline-hover);
@@ -4010,7 +4021,7 @@ a[href^="https://maps.google.com/maps"] {
 .review .review-slider .box img{
     height: 10rem;
     width: 10rem;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 .review .review-slider .box p{
     padding: 1rem 0;
@@ -4020,7 +4031,7 @@ a[href^="https://maps.google.com/maps"] {
 }
 .review .review-slider .box h3{
     padding-bottom: .5rem;
-    color: var(--black);
+    color: #e7c51f;
     font-size: 2.2rem;
 }
 .review .review-slider .box .stars i{
