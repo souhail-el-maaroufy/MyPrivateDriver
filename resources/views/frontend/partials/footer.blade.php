@@ -1,5 +1,5 @@
 <footer>
-    <div id="gtco-portfolio"  style="background-color: #333">
+    <div id="gtco-portfolio" >
         <div class="gtco-container">
             {{-- <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box-off">
@@ -63,7 +63,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12 text-center" style="background: #333;color:white;">
+        <div class="col-md-12 text-cente copyright" >
                 <p>Copyright &copy; 2023 - Private Driver Car , Tous droits réservés.</p>
         </div>
     </div>

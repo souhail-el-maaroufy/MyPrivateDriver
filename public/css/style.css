@@ -1,9 +1,9 @@
 body {
-    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    color: #777;
+    color: #111;
     background: #fff;
     text-rendering: auto;
     text-rendering: optimizeSpeed;
@@ -14,7 +14,7 @@ body {
 .booking-form {
     padding: 20px;
     /* border-radius: 4px; */
-    box-shadow: 0 1px 11px 0 rgba(0, 0, 0, .1);
+    /* box-shadow: 0 1px 11px 0 rgba(0, 0, 0, .1); */
     background-color: #fff;
     width: 100%;
     display: inline-block
@@ -22,8 +22,8 @@ body {
 
 .booking-form .final-words {
     text-align: left !important;
-    font-weight: 700;
-    color: #000
+    font-weight: 600;
+    color: #111
 }
 
 #page {
@@ -56,7 +56,7 @@ body {
 }
 
 a {
-    color: #888;
+    color: #111;
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s
@@ -65,7 +65,7 @@ a {
 a:active,
 a:focus,
 a:hover {
-    color:#e7c51f;
+    color:#D9910B;
     outline: 0;
     text-decoration: none
 }
@@ -81,30 +81,30 @@ h3,
 h4,
 h5,
 h6 {
-    color: #000;
-    /* font-family: 'Maven Pro', sans-serif; */
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 400;
-    /* margin: 0 0 20px */
+    color: #111;
+    font-family: 'Montserrat', Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+line-height: initial;
+text-transform: uppercase;
 }
 
 /* ::-webkit-selection {
     color: #fff;
-    background: #4c89e0
+    background: #D9910B
 }
 
 ::-moz-selection {
     color: #fff;
-    background: #4c89e0
+    background: #D9910B
 }
 
 ::selection {
     color: #fff;
-    background: #4c89e0
+    background: #D9910B
 } */
 
 .gtco-container {
-    max-width: 1140px;
+    max-width: 96%;
     position: relative;
     margin: 0 auto;
     padding-left: 15px;
@@ -115,14 +115,14 @@ h6 {
     margin: 15px;
     color: white;
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
 } */
 
 
 .gtco-nav {
     margin: 0;
     width: 100%;
-    padding: 20px 0;
+    padding: 8px 0;
     z-index: 11;
     background-color: #fff
 }
@@ -142,29 +142,28 @@ h6 {
 .gtco-nav #gtco-logo {
     font-size: 20px;
     padding: 0;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     width: max-content;
-    height: 69px;
+    /* height: 50px; */
     position: absolute;
-    top: -21px;
+    top: 0px;
     left: 0;
     z-index: 100;
     white-space: nowrap
 }
 
 .gtco-nav #gtco-logo img {
-    height: 69px;
-    border-radius: 30%;
+    height: 60px;
 }
 
 .gtco-nav #gtco-logo em {
-    color: #4c89e0
+    color: #D9910B
 }
 
 .gtco-nav #gtco-logo button {
     padding: 1px 0;
-    color: #000;
+    color: #111;
     background-color: transparent;
     border: none;
     outline: 0;
@@ -179,7 +178,7 @@ h6 {
         color: #fff !important
     }
     .gtco-nav {
-        background-color: #000
+        background-color: #111
     }
 }
 
@@ -196,7 +195,7 @@ h6 {
 }
 
 .white-text {
-    color: #f5cf16
+    color: #D9910B
 }
 
 @media screen and (max-width:768px) {
@@ -205,7 +204,7 @@ h6 {
         display: none
     }
     .white-text {
-        color: #f5cf16;
+        color: #D9910B;
         font-size: 13px
     }
 }
@@ -219,12 +218,14 @@ h6 {
     padding: 0;
     margin: 0;
     list-style: none;
-    display: inline
+    display: inline-block
 }
 
 .gtco-nav ul li a {
-    font-size: 14px;
-    padding: 25px 14px;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 16px 16px;
+    display: block;
     color: #111;
     -webkit-transition: .5s;
     -o-transition: .5s;
@@ -244,14 +245,14 @@ h6 {
 
 .gtco-nav ul li.has-dropdown .dropdown {
     width: max-content;
-    -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .15);
-    -moz-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .15);
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .15);
+    /* -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .15); */
+    /* -moz-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .15); */
+    /* box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .15); */
     z-index: 1002;
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    top: 30px;
+    top: 55px;
     left: 0;
     text-align: left;
     background: #fff;
@@ -282,7 +283,7 @@ h6 {
 .gtco-nav ul li.has-dropdown .dropdown li {
     display: block;
     padding: 8px;
-    border-top: solid 1px #efefef
+    border-top: solid 1px #fff
 }
 
 .gtco-nav ul li.has-dropdown .dropdown li:last-child {
@@ -304,20 +305,20 @@ h6 {
 }
 
 .gtco-nav ul li.has-dropdown .dropdown li a:hover {
-    color:#e7c51f
+    color:#D9910B
 }
 
 .gtco-nav ul li.has-dropdown .dropdown li.active>a {
-    color: #4c89e0 !important
+    color: #D9910B !important
 }
 
 .gtco-nav ul li.has-dropdown:focus a,
 .gtco-nav ul li.has-dropdown:hover a {
-    color: #000
+    color: #111
 }
 
 .gtco-nav ul li.btn-cta a {
-    color: #4c89e0
+    color: #D9910B
 }
 
 .gtco-nav ul li.btn-cta a span {
@@ -336,14 +337,13 @@ h6 {
 }
 
 .gtco-nav ul li.btn-cta a:hover span {
-    -webkit-box-shadow: 0 14px 20px -9px rgba(0, 0, 0, .75);
-    -moz-box-shadow: 0 14px 20px -9px rgba(0, 0, 0, .75);
-    box-shadow: 0 14px 20px -9px rgba(0, 0, 0, .75)
+    /* -webkit-box-shadow: 0 14px 20px -9px rgba(0, 0, 0, .75); */
+    /* -moz-box-shadow: 0 14px 20px -9px rgba(0, 0, 0, .75); */
+    /* box-shadow: 0 14px 20px -9px rgba(0, 0, 0, .75) */
 }
 
 .gtco-nav ul li.active>a {
     color: #e0c22e !important;
-    font-weight: 700
 }
 
 @media screen and (max-width:480px) {
@@ -401,9 +401,9 @@ h6 {
     display: table;
     text-align: center;
     background: #fff;
-    -webkit-box-shadow: 0 14px 30px -15px rgba(0, 0, 0, .75);
-    -moz-box-shadow: 0 14px 30px -15px rgba(0, 0, 0, .75);
-    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, .75);
+    /* -webkit-box-shadow: 0 14px 30px -15px rgba(0, 0, 0, .75); */
+    /* -moz-box-shadow: 0 14px 30px -15px rgba(0, 0, 0, .75); */
+    /* box-shadow: 0 14px 30px -15px rgba(0, 0, 0, .75); */
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -577,7 +577,7 @@ h6 {
 }
 
 .gtco-staff .role {
-    color: #bfbfbf;
+    color: #e6e6e6;
     margin-bottom: 30px;
     font-weight: 400;
     display: block
@@ -601,7 +601,7 @@ h6 {
     display: -moz-inline-stack;
     display: inline-block;
     transform: scale();
-    color: #4c89e0;
+    color: #D9910B;
     padding-left: 10px;
     padding-right: 10px
 }
@@ -738,8 +738,8 @@ form label {
 #gtco-counter .counter {
     font-size: 50px;
     margin-bottom: 10px;
-    color: #f5cf16;
-    font-weight: 100;
+    color: #D9910B;
+    font-weight: 400;
     display: block
 }
 
@@ -748,7 +748,7 @@ form label {
     text-transform: uppercase;
     color: rgba(0, 0, 0, .5);
     letter-spacing: .1em;
-    color: #e7c51f;
+    color: #D9910B;
     font-weight: 700
 }
 
@@ -772,7 +772,7 @@ form label {
 }
 
 #gtco-counter .icon i:before {
-    color: #201e1f;
+    color: #111;
     display: block;
     text-align: center;
     margin-left: 3px
@@ -795,7 +795,7 @@ form label {
 }
 
 #gtco-footer a:hover {
-    color: #5928ac !important
+    color: #D9910B !important
 }
 
 @media screen and (max-width:768px) {
@@ -820,11 +820,11 @@ form label {
 #gtco-services.border-bottom,
 #gtco-subscribe.border-bottom,
 .gtco-section.border-bottom {
-    border-bottom: 1px solid #d9d9d9
+    border-bottom: 1px solid #111
 }
 
 #gtco-features-2 {
-    background: #efefef;
+    background: #fff;
     position: relative;
     float: left;
     width: 100%
@@ -848,7 +848,7 @@ form label {
 .feature-center .icon {
     width: 90px;
     height: 90px;
-    border: 1px solid #d6d6d6;
+    border: 1px solid #e6e6e6;
     display: table;
     text-align: center;
     margin: 0 auto 30px;
@@ -864,7 +864,7 @@ form label {
     height: 90px;
     font-size: 40px;
     line-height: 40px;
-    color: #bf9c60
+    color: #D9910B
 }
 
 .feature-center h3,
@@ -873,7 +873,7 @@ form label {
 }
 
 .feature-center h3 {
-    color: #000;
+    color: #111;
     position: relative
 }
 
@@ -894,7 +894,7 @@ form label {
     display: table-cell;
     vertical-align: middle;
     font-size: 40px;
-    color: #4c89e0
+    color: #D9910B
 }
 
 .feature-left .feature-copy {
@@ -904,7 +904,7 @@ form label {
 
 .feature-left .feature-copy h3 {
     font-size: 18px;
-    color: #1a1a1a;
+    color: #111;
     margin-bottom: 10px
 }
 
@@ -922,7 +922,7 @@ form label {
     line-height: 1.5;
     letter-spacing: 2px;
     font-weight: lighter;
-    color: #000;
+    color: #111;
     text-transform: uppercase;
     position: relative;
     padding-bottom: 10px
@@ -931,7 +931,7 @@ form label {
 .gtco-heading h1:before {
     position: absolute;
     bottom: 0;
-    content: "";
+    /* content: ""; */
     width: 50px;
     margin-left: -25px;
     height: 3px;
@@ -942,11 +942,11 @@ form label {
 .gtco-heading p {
     font-size: 16px;
     line-height: 2em;
-    color: #1a1a1a
+    color: #111
 }
 
 #gtco-products {
-    background: #efefef
+    background: #fff
 }
 
 #gtco-products .testimony-slide {
@@ -957,7 +957,7 @@ form label {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 700;
+    font-weight: 600;
     display: block
 }
 
@@ -985,7 +985,7 @@ form label {
 }
 
 .terms {
-    background-color: #f7f7f7;
+    background-color: #fff;
     padding: 8px;
     border-radius: 8px;
     float: left;
@@ -1011,7 +1011,7 @@ form label {
 
 #gtco-products .arrow-thumb a {
     font-size: 32px;
-    color: #dadada
+    color: #e6e6e6
 }
 
 #gtco-products .arrow-thumb a:active,
@@ -1026,7 +1026,7 @@ form label {
     padding: 3px;
     float: left;
     width: 100%;
-    background: #f2f2f2;
+    background: #e6e6e6;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
@@ -1057,16 +1057,16 @@ form label {
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     border-radius: 4px;
-    color: #b3b3b3
+    color: #e6e6e6
 }
 
 .gtco-tabs .gtco-tab-nav li a:hover {
-    color: #4d4d4d
+    color: #e6e6e6
 }
 
 .gtco-tabs .gtco-tab-nav li.active a {
     background: #fff;
-    color: #4c89e0
+    color: #D9910B
 }
 
 .gtco-tabs .gtco-tab-content-wrap {
@@ -1124,11 +1124,11 @@ form label {
 }
 
 .gtco-tabs .icon-xlg i {
-    color: #4c89e0
+    color: #D9910B
 }
 
 #gtco-subscribe {
-    background: #201e1f
+    background: #111
 }
 
 #gtco-subscribe .form-control {
@@ -1136,7 +1136,7 @@ form label {
     color: #fff;
     font-size: 1px !important;
     width: 100%;
-    border: 2px solid rgba(255, 255, 255, .2) !important;
+    border: 2px solid #e6e6e6 !important;
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s
@@ -1144,7 +1144,7 @@ form label {
 
 #gtco-subscribe .form-control:focus {
     background: 0 0;
-    border: 2px solid rgba(255, 255, 255, .8) !important
+    border: 2px solid #e6e6e6 !important
 }
 
 #gtco-subscribe .form-control::-webkit-input-placeholder {
@@ -1166,7 +1166,7 @@ form label {
 #gtco-subscribe .btn {
     height: 54px;
     border: none !important;
-    background: #4c89e0;
+    background: #D9910B;
     color: #fff;
     font-size: 16px;
     font-weight: 400;
@@ -1214,7 +1214,7 @@ form label {
 }
 
 #gtco-footer .gtco-footer-links li a:hover {
-    color: #4c89e0
+    color: #D9910B
 }
 
 #gtco-footer .gtco-widget {
@@ -1223,7 +1223,7 @@ form label {
 
 #gtco-footer .gtco-widget h3 {
     margin-bottom: 15px;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 15px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -1268,7 +1268,7 @@ form label {
     position: absolute;
     z-index: 1901;
     width: 100%;
-    background: #000;
+    background: #111;
     top: 0;
     right: 0;
     top: 0;
@@ -1287,7 +1287,7 @@ form label {
 }
 
 #gtco-offcanvas a:active {
-    color: #4c89e0
+    color: #D9910B
 }
 
 @media screen and (max-width:768px) {
@@ -1308,7 +1308,7 @@ form label {
     color: #fff;
     text-transform: capitalize;
     line-height: 4rem;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 2rem
 }
 
@@ -1371,7 +1371,7 @@ form label {
 }
 
 .gtco-nav ul li.has-dropdown.active>a:after {
-    color: #4c89e0
+    color: #D9910B
 }
 
 #gtco-offcanvas ul li.offcanvas-has-dropdown.active a:after {
@@ -1384,9 +1384,9 @@ form label {
 
 .uppercase {
     font-size: 14px;
-    color: #000;
+    color: #111;
     margin-bottom: 10px;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase
 }
 
@@ -1458,11 +1458,11 @@ form label {
     display: inline-block;
     width: 25px;
     height: 2px;
-    color: #252525;
+    color: #111;
     font: bold 14px/.4 Helvetica;
     text-transform: uppercase;
     text-indent: -55px;
-    background: #252525;
+    background: #111;
     transition: all .2s ease-out
 }
 
@@ -1471,7 +1471,7 @@ form label {
     content: '';
     width: 25px;
     height: 2px;
-    background: #252525;
+    background: #111;
     position: absolute;
     left: 0;
     transition: all .2s ease-out
@@ -1569,14 +1569,14 @@ form label {
 .btn:active,
 .btn:focus,
 .btn:hover {
-    box-shadow: none !important;
+    /* box-shadow: none !important; */
     outline: 0 !important
 }
 
 .btn-primary {
-    background: #4c89e0;
+    background: #D9910B;
     color: #fff;
-    border: 2px solid #4c89e0 !important
+    border: 2px solid #D9910B !important
 }
 
 .btn-primary:active,
@@ -1588,45 +1588,45 @@ form label {
 
 .btn-primary.btn-outline {
     background: 0 0;
-    color: #4c89e0;
-    border: 2px solid #4c89e0
+    color: #D9910B;
+    border: 2px solid #D9910B
 }
 
 .btn-primary.btn-outline:active,
 .btn-primary.btn-outline:focus,
 .btn-primary.btn-outline:hover {
-    background: #4c89e0;
+    background: #D9910B;
     color: #fff
 }
 
 .btn-success {
-    background: #201e1f;
+    background: #111;
     color: #111;
-    border: 1px solid #201e1f
+    border: 1px solid #111
 }
 
 .btn-success:hover {
-    background: #201e1f !important;
-    border-color: #201e1f !important
+    background: #111 !important;
+    border-color: #111 !important
 }
 
 .btn-success.btn-outline {
     background: 0 0;
-    color: #948045;
-    border: 2px solid #948045
+    color: #e6e6e6;
+    border: 2px solid #e6e6e6
 }
 
 .btn-success.btn-outline:active,
 .btn-success.btn-outline:focus,
 .btn-success.btn-outline:hover {
-    background: #948045;
+    background: #e6e6e6;
     color: #fff
 }
 
 .btn-info {
-    background: #5bc0de;
+    background: #D9910B;
     color: #fff;
-    border: 2px solid #5bc0de
+    border: 2px solid #D9910B
 }
 
 .btn-info:active,
@@ -1638,14 +1638,14 @@ form label {
 
 .btn-info.btn-outline {
     background: 0 0;
-    color: #5bc0de;
-    border: 2px solid #5bc0de
+    color: #D9910B;
+    border: 2px solid #D9910B
 }
 
 .btn-info.btn-outline:active,
 .btn-info.btn-outline:focus,
 .btn-info.btn-outline:hover {
-    background: #5bc0de;
+    background: #D9910B;
     color: #fff
 }
 
@@ -1703,28 +1703,28 @@ form label {
 
 .btn-white {
     background: #fff;
-    color: #000;
+    color: #111;
     border: 2px solid #fff
 }
 
 .btn-white:active,
 .btn-white:focus,
 .btn-white:hover {
-    color: #000;
+    color: #111;
     background: #f2f2f2 !important;
     border-color: #f2f2f2 !important
 }
 
 .btn-white.btn-outline {
     color: #fff;
-    background-color: #ffb119
+    background-color: #D9910B
 }
 
 .btn-white.btn-outline:active,
 .btn-white.btn-outline:focus,
 .btn-white.btn-outline:hover {
     background: #fff;
-    color: #000;
+    color: #111;
     border: 2px solid #fff
 }
 
@@ -1739,7 +1739,7 @@ form label {
 .btn-outline:active,
 .btn-outline:focus,
 .btn-outline:hover {
-    box-shadow: none
+    /* box-shadow: none */
 }
 
 .btn.with-arrow {
@@ -1774,9 +1774,9 @@ form label {
 
 .form-control {
     padding: 10px;
-    box-shadow: none;
+    /* box-shadow: none; */
     background: 0 0;
-    color: #777777;
+    color: #111111;
     border: 1px solid #f3f3f3;
     height: 46px;
     font-size: 14px;
@@ -1786,8 +1786,8 @@ form label {
 .form-control:active,
 .form-control:focus {
     outline: 0;
-    box-shadow: none;
-    border-color: #4c89e0
+    /* box-shadow: none; */
+    border-color: #D9910B
 }
 
 .row-pb-md {
@@ -1829,20 +1829,46 @@ form label {
     padding: 20px;
     border-radius: 8px;
     background-color: #fff;
-    box-shadow: 0 1px 11px 0 rgba(0, 0, 0, .05);
+    /* box-shadow: 0 1px 11px 0 rgba(0, 0, 0, .05); */
     text-align: center;
     margin-top: 20px;
     border-radius: 8%;
 }
 .feature-inner:hover{
-background-color: #ffb119;
+background-color: #D9910B;
 color: #fff;
 }
 
 .gtco-contact {
-    padding: 0
+    padding: 8px;
+    color: #fff;
+    font-size: 14px;
 }
-
+/* The animation code */
+@keyframes contact {
+    from {right: -1300px;}
+    to {right: 0px;}
+  }
+  
+  /* The element to apply the animation to */
+  .gtco-contact {
+    animation-name: contact;
+    animation-duration: 35s;
+    animation-iteration-count: infinite;
+  }
+@media screen and (max-width:768px) {
+    @keyframes contact {
+        from {right: 0px;}
+        to {right: 0px;}
+      }
+      
+      /* The element to apply the animation to */
+      /* .gtco-contact {
+        animation-name: contact;
+        animation-duration: 35s;
+        animation-iteration-count: infinite;
+      } */
+}
 @media screen and (max-width:768px) {
     .gtco-nav .gtco-contact {
         text-align: left !important
@@ -1865,7 +1891,7 @@ color: #fff;
 }
 
 .gtco-nav .gtco-contact ul li a i {
-    color: #4c89e0
+    color: #D9910B
 }
 
 .gtco-nav .gtco-contact ul li a:hover i {
@@ -1935,7 +1961,7 @@ color: #fff;
     height: 90px;
     margin: 0 auto 10px;
     position: relative;
-    background: #201e1f;
+    background: #111;
     top: -3em;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -1948,7 +1974,7 @@ color: #fff;
     line-height: 90px;
     height: 90px;
     font-size: 40px;
-    color: #4c89e0
+    color: #D9910B
 }
 
 #gtco-features-3 .feature .icon i:before {
@@ -1967,20 +1993,20 @@ color: #fff;
 }
 
 .gtco-nav ul li.has-dropdown>a:after {
-    color: #000;
+    color: #111;
     margin: 0 0 0 8px
 }
 
 @media screen and (max-width:768px) {
     #gtco-features-3 .feature.feature-2 {
-        -webkit-box-shadow: none !important;
-        -moz-box-shadow: none !important;
-        box-shadow: none !important
+        /* -webkit-box-shadow: none !important; */
+        /* -moz-box-shadow: none !important; */
+        /* box-shadow: none !important */
     }
 }
 
 #gtco-features-3 .feature.feature-2 .icon {
-    background: #201e1f
+    background: #111
 }
 
 #gtco-features-3 .feature.feature-2 .feature-inner {
@@ -2004,7 +2030,7 @@ color: #fff;
     position: absolute;
     bottom: -30px;
     content: "";
-    background: #4c89e0;
+    background: #D9910B;
     height: 30px;
     width: 100%;
     left: 0
@@ -2013,9 +2039,9 @@ color: #fff;
 @media screen and (max-width:768px) {
     #gtco-features-3 .feature.feature-2:after {
         display: none;
-        -webkit-box-shadow: none !important;
-        -moz-box-shadow: none !important;
-        box-shadow: none !important
+        /* -webkit-box-shadow: none !important; */
+        /* -moz-box-shadow: none !important; */
+        /* box-shadow: none !important */
     }
 }
 
@@ -2039,9 +2065,26 @@ color: #fff;
 
 #gtco-portfolio {
     padding: 3em 0;
-    /* background: #333; */
+    background: #011C26;
+    color: #fff;
     background-size: cover;
     background-repeat: repeat
+}
+.copyright{
+    background: #011C26;
+}
+.copyright p{
+    margin: 16px 0;
+    text-align: center;
+    color: #fff;
+}
+
+#gtco-portfolio a,
+#gtco-portfolio h1,
+#gtco-portfolio h2,
+#gtco-portfolio h3,
+#gtco-portfolio h4{
+color: #fff;
 }
 
 @media screen and (max-width:768px) {
@@ -2170,8 +2213,12 @@ color: #fff;
     right: 1em;
     position: absolute;
     z-index: 10;
-    background-color: #00000080;
-    padding: 10px
+    background-color: #11111180;
+    padding: 10px;
+    color: #fff;
+}
+#gtco-portfolio-list li a .case-studies-summary a {
+color: #fff;
 }
 
 #gtco-portfolio-list li a .case-studies-summary h3 {
@@ -2312,7 +2359,7 @@ color: #fff;
 .owl-carousel-fullwidth .owl-controls .owl-nav .owl-prev:hover i,
 .owl-carousel-posts .owl-controls .owl-nav .owl-next:hover i,
 .owl-carousel-posts .owl-controls .owl-nav .owl-prev:hover i {
-    color: #000
+    color: #111
 }
 
 .owl-carousel-fullwidth.fh5co-light-arrow .owl-controls .owl-nav .owl-next i,
@@ -2383,18 +2430,19 @@ color: #fff;
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
     background: 0 0;
-    border: 2px solid #ffb119
+    border: 2px solid #D9910B
 }
 
 .booking-form .btn-submit {
     direction: ltr;
     border: none;
     padding: 15px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    /* box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, .1); */
+    color: #fff;
     cursor: pointer;
     position: relative;
-    background-color: #f5cf16;
+    background-color: #D9910B;
     width: 100%;
     transition: .5s border-radius
 }
@@ -2451,9 +2499,9 @@ color: #fff;
 
 .nav-tabs>li.active,
 .nav-tabs>li.active>a {
-    color: #f5cf16 !important;
-    font-weight: 700;
-    box-shadow: 0 -8px 15px -7px rgba(0, 0, 0, .05)
+    color: #D9910B !important;
+    font-weight: 600;
+    /* box-shadow: 0 -8px 15px -7px rgba(0, 0, 0, .05) */
 }
 
 .nav-tabs>li,
@@ -2474,17 +2522,17 @@ color: #fff;
     height: auto;
     right: 0;
     margin: -41px 0 0;
-    color: #252525;
+    color: #111;
     z-index: 10;
     padding: 4px 6px
 }
 
 .booking-form .location {
-    font-weight: 700;
+    font-weight: 600;
     width: 100%;
     padding: 10px;
     text-align: left;
-    border: 1px solid #efefef;
+    border: 1px solid #e6e6e6;
     margin: 4px 0;
     float: left;
     color: #1349a0;
@@ -2494,7 +2542,7 @@ color: #fff;
 
 .booking-form .price b {
     color: #2848d5;
-    font-weight: 900;
+    font-weight: 600;
     font-size: 32px
 }
 
@@ -2509,7 +2557,9 @@ color: #fff;
     width: 100%;
     height: 60px;
     margin: 10px 0;
-    float: left
+    float: left;
+    display: flex;
+    gap: 8px;
 }
 
 .booking-form .time-choices.col-md-12 {
@@ -2518,25 +2568,21 @@ color: #fff;
 }
 
 .booking-form .time-choices .choice {
-    padding: 6px 0;
-    width: 50%;
-    background: #f1f1f1;
+    padding: 6px;
+    flex: 1;
+    background: #ffffff;
     text-align: center;
-    float: left;
     cursor: pointer;
-    color: #252525
 }
 
 .booking-form .time-choices .choice:hover {
     color: #fff;
-    background: #e7c51f;
+    background: #D9910B;
 }
 
 .booking-form .time-choices .active {
-    color: #111;
-    background: #f5cf16;
-    border-radius: 4px;
-    box-shadow: 0 1px 11px 0 rgba(0, 0, 0, .1)
+    color: #fff;
+    background: #D9910B;
 }
 
 .toggle {
@@ -2668,17 +2714,17 @@ color: #fff;
 
 .form-titles {
     text-transform: uppercase;
-    color: #4c89e0;
+    color: #D9910B;
     padding: 10px 0;
-    font-weight: 700;
+    font-weight: 600;
     text-align: left
 }
 
 .booking-form .final-words {
     text-align: left;
     font-size: 1.4rem;
-    font-weight: 700;
-    color: #000;
+    font-weight: 600;
+    color: #111;
     width: 80%
 }
 
@@ -2688,7 +2734,7 @@ color: #fff;
 
 .main-form .form-title {
     text-transform: uppercase;
-    color: #4c89e0;
+    color: #D9910B;
     padding: 4px 0;
     font-weight: 700 !important;
     text-align: left;
@@ -2705,7 +2751,7 @@ color: #fff;
 }
 
 .booking-form .btn-submit:hover {
-    background: #e7c51f !important
+    background: #D9910B !important
 }
 
 .booking-form [class^=ti-] {
@@ -2998,7 +3044,7 @@ color: #fff;
 }
 
 .my_price .form_infos {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 14px;
     color: #fff
 }
@@ -3069,7 +3115,7 @@ color: #fff;
 
 .my_currency {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     padding: 0 6px
 }
 
@@ -3093,7 +3139,7 @@ color: #fff;
 .my_selected_cars {
     width: 100%;
     text-align: left;
-    border: 1px solid #efefef;
+    border: 1px solid #e6e6e6;
     margin: 10px auto 10px;
     display: none
 }
@@ -3105,8 +3151,8 @@ color: #fff;
 
 .header_reservation {
     padding: 10px 10px 6px !important;
-    color: #000;
-    font-weight: 700;
+    color: #111;
+    font-weight: 600;
     border-radius: 5px;
     width: 100%;
     float: left;
@@ -3116,7 +3162,7 @@ color: #fff;
 .geolocalize-me {
     height: 45px;
     width: 9%;
-    border: 1px solid #efefef;
+    border: 1px solid #e6e6e6;
     background-color: #f9f9f9;
     float: right;
     border-radius: 4px;
@@ -3195,14 +3241,14 @@ color: #fff;
 
 .contacts a {
     font-size: 12px;
-    color: #201e1f;
+    color: #111;
     display: block;
     line-height: 35px;
     padding: 0 4px 0 8px
 }
 
 .contacts a:hover {
-    background-color: #4c89e0;
+    background-color: #D9910B;
     color: #fff
 }
 
@@ -3212,7 +3258,7 @@ color: #fff;
     left: inherit;
     margin: 0;
     min-width: fit-content;
-    z-index: 10000;
+    z-index: 11110;
     border: none;
     padding: 4px
 }
@@ -3232,7 +3278,7 @@ color: #fff;
 }
 
 .dropdown-menu.languages>li>a:hover {
-    background-color: #4c89e0;
+    background-color: #D9910B;
     color: #fff
 }
 
@@ -3254,7 +3300,7 @@ color: #fff;
         position: fixed;
         top: 0;
         width: 100%;
-        box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .06)
+        /* box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .06) */
     }
 }
 
@@ -3359,8 +3405,8 @@ a.btn.btn-success.btn-submit.finalize-btn:after {
     top: -5.8em;
     text-align: left;
     width: 100%;
-    z-index: 1000;
-    box-shadow: none;
+    z-index: 1111;
+    /* box-shadow: none; */
     padding: 0;
     border: none;
     padding: 2px
@@ -3369,7 +3415,7 @@ a.btn.btn-success.btn-submit.finalize-btn:after {
 .cars .dropdown-menu li {
     width: 100%;
     display: inline-block;
-    border-bottom: solid 1px #efefef
+    border-bottom: solid 1px #e6e6e6
 }
 
 .cars .dropdown-menu li #my_car {
@@ -3385,11 +3431,11 @@ a.btn.btn-success.btn-submit.finalize-btn:after {
 }
 
 .cars .dropdown-menu li #my_car:hover {
-    background-color: #eff7ff
+    background-color: #fff
 }
 
 .cars .dropdown-backdrop {
-    background-color: #1321378f
+    background-color: #D9910B
 }
 
 .cars .dropdown-menu .car {
@@ -3397,7 +3443,7 @@ a.btn.btn-success.btn-submit.finalize-btn:after {
 }
 
 .cars .dropdown-menu .car span {
-    color: #000
+    color: #111
 }
 
 .car-details {
@@ -3410,12 +3456,12 @@ a.btn.btn-success.btn-submit.finalize-btn:after {
 }
 
 .top-menu {
-    background-color: #f1f7f7
+    background-color: #d9910b
 }
 
 .dropdown-header {
-    font-weight: 700;
-    color: #bf9c60;
+    font-weight: 600;
+    color: #D9910B;
     padding: 0 8px !important;
     font-size: 14px;
     text-align: left;
@@ -3439,7 +3485,7 @@ a.btn.btn-success.btn-submit.finalize-btn:after {
 }
 
 .car-details span {
-    color: #0081b1 !important
+    color: #D9910B !important
 }
 
 @media screen and (max-width:768px) {
@@ -3510,17 +3556,17 @@ a.whatsapp-but {
 }
 
 .link-text-white {
-    font-weight: 700;
+    font-weight: 600;
     color: #fff
 }
 
 .link-text-colored {
-    font-weight: 700;
-    color: #000
+    font-weight: 600;
+    color: #111
 }
 
 .link-text-white:hover {
-    color: #00ffb1 !important
+    color: #D9910B !important
 }
 
 .booking-form ul.dropdown-menu::before {
@@ -3553,12 +3599,12 @@ a.whatsapp-but {
 }
 
 #cars_prices ul a:hover {
-    background-color: hsl(38, 23%, 37%);
+    background-color: #D9910B;
     color: inherit
 }
 
 .clicked {
-    background-color: hsl(38, 23%, 68%);
+    background-color: #D9910B;
     color: inherit
 }
 
@@ -3566,7 +3612,7 @@ a.whatsapp-but {
     width: 100%;
     display: grid;
     padding: 0;
-    border-bottom: solid 1px #efefef
+    border-bottom: solid 1px #e6e6e6
 }
 
 #cars_prices .car-details-list {
@@ -3578,7 +3624,7 @@ a.whatsapp-but {
 
 #cars_prices .car-price {
     color: #fff;
-    background-color: #bf9c60;
+    background-color: #D9910B;
     padding: 2px 4px;
     border-radius: 4px;
     margin-top: 16px;
@@ -3594,7 +3640,7 @@ a.whatsapp-but {
     margin-left: 6px;
     display: inherit;
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 600;
     float: left
 }
 
@@ -3613,7 +3659,7 @@ a.whatsapp-but {
 
 #cars_prices .dist-duration-info {
     line-height: 40px;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 12px
 }
 
@@ -3622,8 +3668,8 @@ a.whatsapp-but {
     position: absolute;
     right: 40%;
     padding-top: 14px;
-    font-weight: 700;
-    color: #0034cc;
+    font-weight: 600;
+    color: #D9910B;
     background: url(../images/up-to.svg) bottom center no-repeat;
     background-size: 9px;
     background-position-x: 100%;
@@ -3635,12 +3681,11 @@ a.whatsapp-but {
     background-color: #fff;
     border: 0;
     border-radius: 2px;
-    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, .3);
+    /* box-shadow: 0 1px 4px -1px rgba(0, 0, 0, .3); */
     margin: 10px;
     padding: 0 .5em;
     font: 400 18px Roboto, Arial, sans-serif;
     overflow: hidden;
-    font-family: Roboto;
     padding: 0
 }
 
@@ -3655,16 +3700,14 @@ a.whatsapp-but {
 }
 
 .pac-controls label {
-    font-family: Roboto;
     font-size: 13px;
     font-weight: 300
 }
 
 #pac-input {
     background-color: #fff;
-    font-family: Roboto;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
     margin-left: 12px;
     padding: 0 11px 0 13px;
     text-overflow: ellipsis;
@@ -3672,14 +3715,14 @@ a.whatsapp-but {
 }
 
 #pac-input:focus {
-    border-color: #4d90fe
+    border-color: #D9910B
 }
 
 #title {
     color: #fff;
-    background-color: #4d90fe;
+    background-color: #D9910B;
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 600;
     padding: 6px 12px
 }
 
@@ -3698,7 +3741,7 @@ a.whatsapp-but {
     height: 260px;
     width: 100%;
     display: block;
-    border: 1px solid #f7f7f7;
+    border: 1px solid #e6e6e6;
     border-radius: 5px;
     margin: 14px 0
 }
@@ -3727,7 +3770,7 @@ a[href^="https://maps.google.com/maps"] {
 @media screen and (max-width:768px) {
     #cars_prices .car-name {
         font-size: 13px;
-        font-weight: 700;
+        font-weight: 600;
         float: left
     }
     #cars_prices .car-price {
@@ -3767,7 +3810,7 @@ a[href^="https://maps.google.com/maps"] {
     display: inline-block;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
-    font-weight: 700;
+    font-weight: 600;
     padding: 8px 0
 }
 
@@ -3789,7 +3832,7 @@ a[href^="https://maps.google.com/maps"] {
     left: 0;
     width: 42px;
     height: 22px;
-    background-color: #e2f1ff;
+    background-color: #fff;
     border-radius: 11px;
     transform: translate3d(2px, 2px, 0) scale3d(1, 1, 1);
     transition: all .25s linear
@@ -3803,7 +3846,7 @@ a[href^="https://maps.google.com/maps"] {
     height: 22px;
     background-color: #fff;
     border-radius: 11px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, .24);
+    /* box-shadow: 0 2px 2px rgba(0, 0, 0, .24); */
     transform: translate3d(2px, 2px, 0);
     transition: all .2s ease-in-out
 }
@@ -3842,15 +3885,15 @@ a[href^="https://maps.google.com/maps"] {
 }
 
 .total-info {
-    color: #bfb199;
+    color: #111;
     font-size: 13px;
     text-align: left;
-    border-bottom: dotted 1px #d9d9d9;
+    border-bottom: dotted 1px #111;
     padding: 4px 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    font-weight: 700;
+    font-weight: 600;
     width: 100%
 }
 
@@ -3901,7 +3944,7 @@ a[href^="https://maps.google.com/maps"] {
 
 .am-pm {
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     color: white;
     direction: ltr
 }
@@ -3913,9 +3956,9 @@ a[href^="https://maps.google.com/maps"] {
     padding: 0 8px;
     display: block;
     cursor: pointer;
-    background: #f1f1f1;
+    background: #ffffff;
     border-radius: 6px;
-    font-weight: 700;
+    font-weight: 600;
     z-index: 1
 }
 
@@ -3938,7 +3981,7 @@ a[href^="https://maps.google.com/maps"] {
     cursor: default
 }
 .customr-feed span{
-    color:#ffb119 ;
+    color:#D9910B ;
 }
 .customr-feed h1{
     font-style: italic;
@@ -3946,8 +3989,8 @@ a[href^="https://maps.google.com/maps"] {
     margin-top: 20px;
 }
 .customr-feed p{
-    font-weight: 300;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 16px;
 }
 .customr-feed i{
     padding-top: 22px;
@@ -3956,8 +3999,8 @@ a[href^="https://maps.google.com/maps"] {
     height: 80px;
     float:left;
     font-size: 3.5rem;
-    background-color: #000;
-    color: #ffb119;
+    background-color: #111;
+    color: #D9910B;
     border-radius:15%;
 }
 .customr-feed i:hover{
@@ -3965,12 +4008,12 @@ a[href^="https://maps.google.com/maps"] {
     width: 80px;
     height: 80px;
     font-size: 3rem;
-    background-color: #ffb119;
-    color: #000;
+    background-color: #D9910B;
+    color: #111;
     border-radius: 5%;
 }
 .customr-feed h4{
-    font-weight: 700;
+    font-weight: 600;
     font-style: italic;
 }
 
@@ -3991,33 +4034,24 @@ a[href^="https://maps.google.com/maps"] {
     to {right: 0px;}
 }
 
-.review .review-slider .box:hover{
-    border-radius: 11%;
-    /* background-color:#f28b00 ;
-    color: #000; */
-}
 .review .review-slider{
     padding: 1rem;
 }
 .review .review-slider .box{
    background: #fff;
    border: solid #666 1.5px;
-   border-radius: 1.5rem;
+   border-radius: 8px;
    text-align: center;
-   padding: 3rem 2rem;
+   padding: 2rem 1rem;
    outline-offset: -1rem;
    outline: var(--outline);
-   box-shadow: var(--box-shadow);
+   /* /* box-shadow: var(--box-shadow); */ 
    transition: .2s linear;
 }
 /* .gtco-section .reviews{
     background: #333;
 } */
 
-.review .review-slider .box:hover{
-    outline: var(--outline-hover);
-    outline-offset: 0rem;
-}
 .review .review-slider .box img{
     height: 10rem;
     width: 10rem;
@@ -4031,7 +4065,7 @@ a[href^="https://maps.google.com/maps"] {
 }
 .review .review-slider .box h3{
     padding-bottom: .5rem;
-    color: #e7c51f;
+    color: #D9910B;
     font-size: 2.2rem;
 }
 .review .review-slider .box .stars i{

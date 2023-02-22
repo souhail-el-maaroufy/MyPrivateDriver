@@ -13,7 +13,7 @@
        </h3>
     </div>
 </div>
-<div class="row Business_travel_img">
+<div class="row driver_services_img">
     <div class="container">
         <img style="width:100%;border-radius:2%;" src="{{ asset('images/new-section-1-luxury-transportation-min-2.jpg') }}" alt=""
         srcset="">
@@ -26,7 +26,7 @@
             <div class="col-md-7">
                 <div class="row">
                     <div class="col-md-12  text-center gtco-heading animate-box-off">
-                        <h1><span class="title_span">ENT A DRIVER</span> SERVICES</h1>
+                        <h1><span class="title_span">RENT A DRIVER</span> SERVICES</h1>
                     </div>
                 </div>
                 {{-- <h1>RENT A DRIVER SERVICES</h1> --}}

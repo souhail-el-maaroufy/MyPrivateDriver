@@ -1,13 +1,19 @@
 <div class="row top-menu">
     <div class="gtco-container">
-        <div class="col-md-12 text-right gtco-contact">
-            <ul class="contacts">
-                <li> <a href="tel:#" title="Call Us"><img src="{{ asset('images/phone.svg') }}" alt="call us" /></a>
+        <div class="col-md-12 gtco-contact">
+            <div class="col-md-3">
+                <span><i class="fa-solid fa-phone"></i>  +212 787 543 213</span>
+            </div>
+            <div class="col-md-9">
+                <span><i class="fa-solid fa-location-dot"></i>  Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Nihil, ipsam dolores, adipisci .</span>
+            </div>
+            {{-- <ul class="contacts">
+                <li> <a href="tel:#" title="Call Us"></a>
                 </li>
-                {{-- <li><a href="#" target = "_blank" title="Our Facebook page" ><img src="{{asset('images/facebook.svg')}}" alt="Facebook"/></a></li> --}}
-                <li> <a href="#" title="Send a Message on whattsapp"><img src="{{ asset('images/whatsapp.svg') }}"
-                            alt="whatsapp" /></a></li>
-            </ul>
+                <li><a href="#" target = "_blank" title="Our Facebook page" ><img src="{{asset('images/facebook.svg')}}" alt="Facebook"/></a></li>
+                <li> <a href="#" title="Send a Message on whattsapp"></a></li>
+            </ul> --}}
             {{-- <div class="btn-group">
                 <button type="button" class="btn btn-default dropdown-toggle headerlanguages" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false" title="English">
@@ -62,7 +68,7 @@
                                 <a href="#" title="Desert Safari Tours" alt="Desert Safari Tours">Desert Safari Tours</a>
                             </li>
 
-                            <li class=""><a href="#" title="Wedding cars with driver in Morocco"
+                            <li class=""><a href="{{route('wedding_car_service')}}" title="Wedding cars with driver in Morocco"
                                     alt="Wedding cars with driver in Morocco"> Wedding cars with driver in Morocco  </a> </li>
                         </ul>
                     </li>

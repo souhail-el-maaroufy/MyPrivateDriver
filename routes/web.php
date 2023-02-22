@@ -34,3 +34,8 @@ Route::get('/driver_services',function(){
     return view('driver_services');
 })->name('driver_services');
 
+Route::get('/wedding_car_service',function(){
+    return view('wedding_car_service');
+})->name('wedding_car_service');
+
+

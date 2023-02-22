@@ -1,36 +1,35 @@
 .title_span{
-    color: #f5cf16;
+    color: #D9910B;
     font-weight: 600;
 }
 .our-sevices-img{
-    height: 200px;
-    width: 250px;
+    width: 100%;
 }
 .our-sevices-title{
     font-weight: 600;
-    font-style: italic;
-    color: #f5cf16 !important;
+    color: #D9910B !important;
+    font-size: 16px;
 }
 .our-sevices-text{
     text-align: center;
+    padding: 0px 8px ;
 }
 .our-services-p{
-    min-height: 170px;
+    font-size: 16px;
 }
 .btn-see-more{
-    font-style: italic;
     font-weight: 400;
-    border: solid 1.5px #e3e3e2;
-    padding: 15px;
-    background: #4d4d4d;
+    border: solid 1px #D9910B;
+    padding: 0px 24px;
+    font-size: 14px;
+    line-height: 36px;
+    display: inline-block;
+    background: #D9910B;
     color: white;
-    box-shadow: 3px 3px 5px #dfbf88;
 }
 .btn-see-more:hover{
-    font-weight: 500;
-    color: #000;
-    background: #f5cf16;
-    border: none;
+    border: solid 1px #e3e3e2;
+    color: white;
 }
 .margin{
     margin-top: 50px;
@@ -40,14 +39,17 @@
     text-align: center;
     padding: 7px;
 }
+
+
 .why-choos-us-title{
     font-weight: 600;
-    font-style: italic;
-    color: #f5cf16 !important;
+    font-size: 18px;
+    color: #D9910B !important;
+    margin: 32px 0 16px;
 }
 .why-choos-us-icon{
     height:130px;
-    border: solid #f5cf16;
+    border: solid #D9910B;
     border-radius: 5%;
     margin-bottom: 20px;
 }
@@ -67,19 +69,8 @@
     margin-bottom: 25px;
     border-radius: 30%;
 }
-.logo-footer-text{
-    color: #888;
-    /* font-style: italic; */
-}
-/* .our-services-footer{
-    color: #888;
-    font-style: italic;
-}
-.our-services-footer li:hover{
-    color: #777;
-} */
 .countact-us-footer{
-    color: #888;
+    color: #fff;
     margin: 10px;
 }
 .form-reservation{
@@ -109,7 +100,7 @@
     padding-top: 120px;
     padding-bottom: 40px;
     text-align: center;
-    color: #f5cf16 ;
+    color: #D9910B ;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
     margin: 0 0 20px;
@@ -135,29 +126,20 @@
     padding: 10px;
 }
 .section-2 .btn-airport_transfer{
-    font-style: italic;
     font-weight: 400;
-    border: solid 1.5px #e3e3e2;
-    padding: 15px;
-    background: #4d4d4d;
+    border: solid 1px #D9910B;
+    padding: 0px 24px;
+    font-size: 14px;
+    line-height: 36px;
+    display: inline-block;
+    background: #D9910B;
     color: white;
-    box-shadow: 3px 3px 5px #dfbf88;
-    padding: 18px;
-    margin-left: 150px;
-    margin-right: 150px;
-    /* width: 100px;
-    font-style: italic;
-    font-weight: 600;
-    color: aliceblue;
-    background-color: #bf9c60;
-    border-radius: 15%; */
 }
-.section-2 .btn-airport_transfer:hover{
+/* .section-2 .btn-airport_transfer:hover{
     font-weight: 500;
     color: #000;
-    background: #f5cf16;
     border: none;
-}
+} */
 @media screen and (max-width:480px){
     .title_page h1{
         padding-bottom: 10px;
@@ -170,16 +152,20 @@
         margin-bottom: 40px;
     }
     .section-2 .btn-airport_transfer{
-        padding: 14px;
-        margin-left: 100px;
-        margin-right: 100px;
-        font-weight: 600;
+        margin:0px 100px 0px 100px;
     }
 }
 .Business_travel{
-    background-color: #bf9c60;
+    background-color: #d9910b;
     height: 440px;
     z-index: -1;
+}
+.widding_car{
+    background-color: #D9910B;
+}
+.widding_car h3{
+    padding: 50px;
+    color:white
 }
 .Business_travel h3{
     padding: 50px;
@@ -188,6 +174,15 @@
 .Business_travel_img{
     margin-top: -200px;
     z-index: 1;
+}
+.driver_services_img{
+    margin-top: -200px;
+    z-index: 1;
+}
+@media screen and (max-width:768px) {
+    .driver_services_img{
+        margin-top: -75px;
+    }
 }
 .Business_travel_text{
     padding-left: 100px;
@@ -202,28 +197,26 @@
 }
 .Business_travel_text .col-md-7{
     padding: 40px;
-    background-color: #bf9c60;
+    background-color: #fff;
 }
 .Business_travel_text .col-md-7 p{
-    color: #f4f4f4;
+    color: #111;
     margin-bottom: 50px;
 }
 .Business_travel_text .btn-Business_travel{
-    font-style: italic;
     font-weight: 400;
-    border: solid 1.5px #e3e3e2;
-    padding: 15px;
-    background: #4d4d4d;
+    border: solid 1px #D9910B;
+    padding: 0px 24px;
+    font-size: 14px;
+    line-height: 36px;
+    display: inline-block;
+    background: #D9910B;
     color: white;
-    box-shadow: 3px 3px 5px #dfbf88;
-    padding: 18px;
-    margin-left: 150px;
-    margin-right: 150px;
 }
 .Business_travel_text .btn-Business_travel:hover{
     font-weight: 500;
     color: #000;
-    background: #f5cf16;
+    background: #D9910B;
     border: none;
 }
 .Business_travel_text .col-md-5{
@@ -237,7 +230,10 @@
 @media screen and (max-width:480px) {
     .Business_travel h3{
         font-size: 19px;
-        padding: 15px;
+        padding: 10px;
+    }
+    .Business_travel_img{
+        margin-top: -110px;
     }
     .Business_travel_text .container{
         margin: 50px -80px 0px -80px;
@@ -249,10 +245,7 @@
         padding: 20px;
     }
     .Business_travel_text .btn-Business_travel{
-        padding: 14px;
-        margin-left: 85px;
-        margin-right: 85px;
-        font-weight: 600;
+        margin: 0px 80px 0px 80px;
     }
 }
 .title_page_contact{
